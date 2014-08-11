@@ -1,0 +1,9 @@
+{
+	"name":"PTech",
+	"author":"Gardon",
+	"version":"0.1.0",
+	"title":"PTech",
+	"homepage":"https://github.com/tdzl2003/PTech",
+	"description":"This mod adds a huge techinique tree, providing many technologies, like underground drilling, space exploring.",
+	"dependencies": ["base"]
+}
