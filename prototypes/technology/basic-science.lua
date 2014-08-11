@@ -3,7 +3,7 @@ data:extend({
 		type = "technology",
 	    name= "calculus",
 	    prerequisites= {},
-		icon="__PTch__/graphics/technology/general-science.png",
+		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
 	      count= 20,
@@ -18,7 +18,7 @@ data:extend({
 		type = "technology",
 	    name= "mechanics",
 	    prerequisites= {"calculus"},
-		icon="__PTch__/graphics/technology/general-science.png",
+		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
 	      count= 40,
@@ -33,7 +33,7 @@ data:extend({
 		type = "technology",
 	    name= "chemistry",
 	    prerequisites= {"calculus"},
-		icon="__PTch__/graphics/technology/chemistry.png",
+		icon="__PTech__/graphics/technology/chemistry.png",
 	    unit=
 	    {
 	      count= 100,
@@ -48,7 +48,7 @@ data:extend({
 		type = "technology",
 	    name= "thermology",
 	    prerequisites= {"mechanics"},
-		icon="__PTch__/graphics/technology/flammables.png",
+		icon="__PTech__/graphics/technology/flammables.png",
 	    unit=
 	    {
 	      count= 75,
@@ -63,7 +63,7 @@ data:extend({
 		type = "technology",
 	    name= "biology",
 	    prerequisites= {"chemistry"},
-		icon="__PTch__/graphics/technology/alien-technology.png",
+		icon="__PTech__/graphics/technology/alien-technology.png",
 	    unit=
 	    {
 	      count= 100,
@@ -78,7 +78,7 @@ data:extend({
 		type = "technology",
 	    name= "bionics",
 	    prerequisites= {"biology"},
-		icon="__PTch__/graphics/technology/alien-technology.png",
+		icon="__PTech__/graphics/technology/alien-technology.png",
 	    unit=
 	    {
 	      count= 100,
@@ -92,8 +92,8 @@ data:extend({
 	{
 		type = "technology",
 	    name= "particle",
-	    prerequisites= {"mechanics"},
-		icon="__PTch__/graphics/technology/laser.png",
+	    prerequisites= {"thermology"},
+		icon="__PTech__/graphics/technology/laser.png",
 	    unit=
 	    {
 	      count= 200,
@@ -108,7 +108,7 @@ data:extend({
 		type = "technology",
 	    name= "restricted-relativity",
 	    prerequisites= {"mechanics"},
-		icon="__PTch__/graphics/technology/general-science.png",
+		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
 	      count= 400,
@@ -122,8 +122,8 @@ data:extend({
 	{
 		type = "technology",
 	    name= "general-relativity",
-	    prerequisites= {"mechanics"},
-		icon="__PTch__/graphics/technology/general-science.png",
+	    prerequisites= {"restricted-relativity"},
+		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
 	      count= 600,
@@ -138,7 +138,7 @@ data:extend({
 		type = "technology",
 	    name= "command-system",
 	    prerequisites= {"particle"},
-		icon="__PTch__/graphics/technology/command-system.png",
+		icon="__PTech__/graphics/technology/command-system.png",
 	    unit=
 	    {
 	      count= 100,
@@ -152,8 +152,8 @@ data:extend({
 	{
 		type = "technology",
 	    name= "astronomy",
-	    prerequisites= {"general-relativity", "command-system"},
-		icon="__PTch__/graphics/technology/alien-technology.png",
+	    prerequisites= {"general-relativity", "command-system", "bionics"},
+		icon="__PTech__/graphics/technology/alien-technology.png",
 	    unit=
 	    {
 	      count= 600,
@@ -168,7 +168,7 @@ data:extend({
 		type = "technology",
 	    name= "space-science",
 	    prerequisites= {"astronomy"},
-		icon="__PTch__/graphics/technology/space.png",
+		icon="__PTech__/graphics/technology/space.png",
 	    unit=
 	    {
 	      count= 600,
