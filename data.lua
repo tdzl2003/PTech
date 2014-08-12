@@ -12,18 +12,14 @@ data:extend{
 	}
 }
 
+--Items
+require("prototypes.item.generators")
 
--- require("prototypes.item.machine")
+-- Entity
+require("prototypes.entity.generators")
 
--- -- Entity
--- require("prototypes.entity.machine")
-
--- -- Recipe
--- require("prototypes.receipt.machine")
+-- Recipe
 require("prototypes.receipt.generators")
 
--- require("prototypes.receipt.drill")
-
--- -- Technology
--- require("prototypes.technology.underground-drilling")
+-- Technology
 require("prototypes.technology.basic-science")
