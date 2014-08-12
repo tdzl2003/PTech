@@ -2,27 +2,28 @@ data:extend({
   {
     type = "accumulator",
     name = "wind-generator",
-    icon = "__base__/graphics/icons/basic-accumulator.png",
+    icon = "__PTech__/graphics/icons/wind-generator.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "wind-generator"},
     max_health = 100,
     corpse = "medium-remnants",
-    collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
-    selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+    selection_box = {{-1, -1}, {1, 1}},
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "50kJ",
+      buffer_capacity = "100kJ",
       usage_priority = "primary-output",
       input_flow_limit = "0kW",
-      output_flow_limit = "30kW"
+      output_flow_limit = "60kW"
     },
     picture =
     {
-      filename = "__base__/graphics/entity/solar-panel/solar-panel.png",
-      priority = "high",
-      width = 104,
-      height = 96
+      filename = "__PTech__/graphics/entity/wind-generator/idle.png",
+      priority = "extra-high",
+      width = 90,
+      height = 200,
+      shift = {0.3, -2}
     },
 
     charge_cooldown = 30,
@@ -30,5 +31,15 @@ data:extend({
 
     discharge_cooldown = 60,
     discharge_light = {intensity = 0, size = 0},
+    discharge_animation =
+    {
+      filename = "__PTech__/graphics/entity/wind-generator/spin.png",
+      frame_width = 90,
+      frame_height = 200,
+      line_length = 9,
+      frame_count = 9,
+      shift = {0.3, -2},
+      animation_speed = 0.5
+    },
   },
 })
