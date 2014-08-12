@@ -1,8 +1,23 @@
 data:extend({
 	{
 		type = "technology",
-	    name= "calculus",
+	    name= "logical",
 	    prerequisites= {},
+		icon="__PTech__/graphics/technology/general-science.png",
+	    unit=
+	    {
+	      count= 5,
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1}}
+	    },
+	    effects=
+	    {
+		}
+	},
+	{
+		type = "technology",
+	    name= "calculus",
+	    prerequisites= {"logical"},
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {

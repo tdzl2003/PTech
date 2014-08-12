@@ -20,6 +20,7 @@ data:extend{
 
 -- -- Recipe
 -- require("prototypes.receipt.machine")
+require("prototypes.receipt.generators")
 
 -- require("prototypes.receipt.drill")
 
