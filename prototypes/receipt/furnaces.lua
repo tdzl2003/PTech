@@ -4,7 +4,7 @@ data:extend({
 		name = "electric-furnace-1",
 		enabled = true,
 		ingredients = {
-			{"stone", 5},
+			{"stone-furnace", 1},
 			{"iron-plate", 5},
 			{"electronic-circuit", 2}
 		},
