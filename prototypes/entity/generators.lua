@@ -26,7 +26,7 @@ data:extend({
       shift = {0.3, -2}
     },
 
-    charge_cooldown = 30,
+    charge_cooldown = 10,
     charge_light = {intensity = 0, size = 0},
 
     discharge_cooldown = 60,
