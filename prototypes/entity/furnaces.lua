@@ -56,6 +56,15 @@ data:extend({
 			frame_count = 1,
 			shift = {0.5, 0.05 }
 	    },
+	    fire_animation =
+		{
+			filename = "__base__/graphics/entity/stone-furnace/stone-furnace-fire.png",
+			priority = "extra-high",
+			frame_width = 23,
+			frame_height = 27,
+			frame_count = 12,
+			shift = { 0.078125, 0.5234375}
+		},
 		fast_replaceable_group = "furnace"
 	},
 })
