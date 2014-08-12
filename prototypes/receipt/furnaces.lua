@@ -1,14 +1,14 @@
 data:extend({
 	{
 		type = "recipe",
-		name = "wind-generator",
+		name = "electric-furnace-1",
 		enabled = true,
 		ingredients = {
-			{"wood", 40},
-			{"iron-gear-wheel", 2},
+			{"stone", 5},
+			{"iron-plate", 5},
 			{"electronic-circuit", 2}
 		},
 		energy_required = 10,
-		result = "wind-generator"
+		result = "electric-furnace-1"
 	},
 })
