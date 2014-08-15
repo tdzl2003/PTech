@@ -2,11 +2,11 @@ data:extend({
 	{
 		type = "technology",
 	    name= "logical",
-	    prerequisites= {},
+	    prerequisites= {"electronics"},
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
-	      count= 5,
+	      count= 100,
 	      time= 15,
 	      ingredients= { {"science-pack-1", 1}}
 	    },
@@ -21,9 +21,9 @@ data:extend({
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
-	      count= 20,
+	      count= 200,
 	      time= 30,
-	      ingredients= { {"science-pack-1", 2}}
+	      ingredients= { {"science-pack-1", 2},{"science-pack-2", 2}}
 	    },
 	    effects=
 	    {

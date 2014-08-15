@@ -1,5 +1,14 @@
 data:extend{
     {
+        type = "item-subgroup",
+        name = "underground-drill",
+        group = "production",
+        order = "g",
+    },
+}
+
+data:extend{
+    {
         type = "item",
         name = "underground-drill1",
         icon = "__PTech__/graphics/icons/basic-mining-drill1.png",

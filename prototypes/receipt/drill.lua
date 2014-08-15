@@ -1,4 +1,20 @@
+data:extend{
+	{
+		type="recipe-category", 
+		name= "underground-drill"
+	}
+}
+
 data:extend({
+	{
+		type = "recipe",
+		name = "underground-drill-dirt",
+		category = "underground-drill",
+		enabled = true,
+		ingredients = {},
+		energy_required = 4,
+		result = "dirt"
+	},
 	{
 		type = "recipe",
 		name = "underground-drill-stone",
