@@ -6,7 +6,7 @@ data:extend({
 		flags = {"goes-to-main-inventory"},
 		subgroup = "raw-resource",
 		order = "g",
-		stack_size = 250
+		stack_size = 1000
 	},
 	{
 		type = "item",

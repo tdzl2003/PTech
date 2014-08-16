@@ -5,19 +5,22 @@ require("prototypes.item.furnaces")
 require("prototypes.item.underground-drill")
 require("prototypes.item.materials")
 require("prototypes.item.plant")
+require("prototypes.item.topography-reform")
 
 -- Entity
 require("prototypes.entity.generators")
 require("prototypes.entity.furnaces")
 require("prototypes.entity.underground-drill")
 require("prototypes.entity.plant")
+require("prototypes.entity.topography-reform")
 
 -- Recipe
-require("prototypes.receipt.generators")
-require("prototypes.receipt.furnaces")
-require("prototypes.receipt.drill")
-require("prototypes.receipt.underground-drill")
-require("prototypes.receipt.plant")
+require("prototypes.recipe.generators")
+require("prototypes.recipe.furnaces")
+require("prototypes.recipe.drill")
+require("prototypes.recipe.underground-drill")
+require("prototypes.recipe.plant")
+require("prototypes.recipe.topography-reform")
 
 -- Technology
 require("prototypes.technology.basic-science")
