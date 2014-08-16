@@ -14,7 +14,7 @@ data:extend{
 		type = "recipe",
 		name = "drill-water",
 		category = "drill-water",
-		enabled = true,
+		enabled = false,
 		ingredients = {},
 		energy_required = 1800,
 		result = "drill-water"
@@ -23,7 +23,7 @@ data:extend{
 		type = "recipe",
 		name = "sea-fill",
 		category = "sea-fill",
-		enabled = true,
+		enabled = false,
 		ingredients = {
 			{name="dirt", count=1000}
 		},
