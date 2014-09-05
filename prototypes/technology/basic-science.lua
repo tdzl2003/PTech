@@ -47,7 +47,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "chemistry",
-	    prerequisites= {"calculus"},
+	    prerequisites= {"logical"},
 		icon="__PTech__/graphics/technology/chemistry.png",
 	    unit=
 	    {
@@ -57,6 +57,14 @@ data:extend({
 	    },
 	    effects=
 	    {
+	    	{
+				type= "unlock-recipe",
+				recipe= "ferment-gas"
+			},
+			{
+				type= "unlock-recipe",
+				recipe= "carbon-lubricant"
+			}
 		}
 	},
 	{

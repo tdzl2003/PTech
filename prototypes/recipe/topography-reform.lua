@@ -25,7 +25,7 @@ data:extend{
 		category = "sea-fill",
 		enabled = false,
 		ingredients = {
-			{name="dirt", count=1000}
+			{"dirt", 1000}
 		},
 		energy_required = 4,
 		result = "sea-fill"

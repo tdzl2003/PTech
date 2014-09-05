@@ -12,3 +12,10 @@ data:extend({
 		result = "electric-furnace-1"
 	},
 })
+
+data.raw["recipe"]["electric-furnace"].ingredients = {
+	{"steel-plate", 15}, 
+	{"advanced-circuit", 5}, 
+	{"stone-brick", 10},
+	{"electric-furnace-1", 2}
+}

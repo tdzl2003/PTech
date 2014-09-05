@@ -1,5 +1,6 @@
 
 --Items
+require("prototypes.item.drill")
 require("prototypes.item.generators")
 require("prototypes.item.furnaces")
 require("prototypes.item.underground-drill")
@@ -8,6 +9,7 @@ require("prototypes.item.plant")
 require("prototypes.item.topography-reform")
 
 -- Entity
+require("prototypes.entity.drill")
 require("prototypes.entity.generators")
 require("prototypes.entity.furnaces")
 require("prototypes.entity.underground-drill")
@@ -21,8 +23,10 @@ require("prototypes.recipe.drill")
 require("prototypes.recipe.underground-drill")
 require("prototypes.recipe.plant")
 require("prototypes.recipe.topography-reform")
+require("prototypes.recipe.chemistry")
 
 -- Technology
+require("prototypes.technology.drill")
 require("prototypes.technology.basic-science")
 require("prototypes.technology.underground-drilling")
 require("prototypes.technology.plant")

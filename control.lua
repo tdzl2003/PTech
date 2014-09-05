@@ -32,6 +32,7 @@ game.onevent(
     function(event)
         if event.createdentity.name:find("generator", 1, true) then
             table.insert(glob.staticEnergyGenerators, event.createdentity)
+            event.createdentity.energy = 1000000000
         end
         if event.createdentity.name == "water-drill" then
             table.insert(glob.waterdrills, event.createdentity)
@@ -49,9 +50,10 @@ game.onevent(defines.events.ontick, function(event)
         glob.runOncePTech = true
         game.getplayer().removeitem({name="burner-mining-drill", count=1})
         game.getplayer().removeitem({name="stone-furnace", count=1})
-        game.getplayer().insert({name="wind-generator", count=3})
+        game.getplayer().insert({name="solar-panel", count=2})
+        game.getplayer().insert({name="basic-accumulator", count=2})
         game.getplayer().insert({name="small-electric-pole", count=1})
-        game.getplayer().insert({name="basic-mining-drill", count=1})
+        game.getplayer().insert({name="underground-drill1", count=1})
         game.getplayer().insert({name="electric-furnace-1", count=1})
     end
 
