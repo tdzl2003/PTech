@@ -5,16 +5,15 @@ data:extend
         name = "ferment-gas",
         category = "chemistry",
         enabled = "false",
-        energy_required = 20,
+        energy_required = 2,
         ingredients =
         {
-            {type="item", name="raw-wood", amount=10}
+            {type="item", name="raw-wood", amount=5}
         },
         results=
         {
             {type="fluid", name="petroleum-gas", amount=1}
         },
-        -- icon = "__base__/graphics/icons/fluid/basic-oil-processing.png",
         subgroup = "fluid",
         order = "a[oil-processing]-g"
     },
@@ -33,8 +32,54 @@ data:extend
         {
             {type="fluid", name="lubricant", amount=1}
         },
-        -- icon = "__base__/graphics/icons/fluid/basic-oil-processing.png",
         subgroup = "fluid",
         order = "a[oil-processing]-g"
+    },
+    {
+        type = "recipe",
+        name = "solid-fuel-from-coal",
+        enabled = false,
+        category = "chemistry",
+        energy_required = 3,
+        ingredients = {
+            {"coal", 4},
+        },
+        result = "solid-fuel",
+        subgroup = "fluid",
+        order = "b[fluid-chemistry]-f-1"
+    },
+    {
+        type = "recipe",
+        name = "fluid-fuel-from-light-oil",
+        category = "chemistry",
+        enabled = "false",
+        energy_required = 2,
+        ingredients =
+        {
+            {type="fluid", name="light-oil", amount=1}
+        },
+        results=
+        {
+            {type="fluid", name="fluid-fuel", amount=1}
+        },
+        subgroup = "fluid",
+        order = "b[fluid-chemistry]-f-2"
+    },
+    {
+        type = "recipe",
+        name = "fluid-fuel-from-petroleum-gas",
+        category = "chemistry",
+        enabled = "false",
+        energy_required = 2,
+        ingredients =
+        {
+            {type="fluid", name="petroleum-gas", amount=2}
+        },
+        results=
+        {
+            {type="fluid", name="fluid-fuel", amount=1}
+        },
+        subgroup = "fluid",
+        order = "b[fluid-chemistry]-f-3"
     },
 }

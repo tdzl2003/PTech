@@ -57,14 +57,6 @@ data:extend({
 	    },
 	    effects=
 	    {
-	    	{
-				type= "unlock-recipe",
-				recipe= "ferment-gas"
-			},
-			{
-				type= "unlock-recipe",
-				recipe= "carbon-lubricant"
-			}
 		}
 	},
 	{

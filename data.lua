@@ -7,6 +7,7 @@ require("prototypes.item.underground-drill")
 require("prototypes.item.materials")
 require("prototypes.item.plant")
 require("prototypes.item.topography-reform")
+require("prototypes.item.fluid")
 
 -- Entity
 require("prototypes.entity.drill")
@@ -31,7 +32,9 @@ require("prototypes.technology.basic-science")
 require("prototypes.technology.underground-drilling")
 require("prototypes.technology.plant")
 require("prototypes.technology.generator")
+require("prototypes.technology.chemistry")
 
 -- Overrides
 -- data.raw["recipe"][name].ingredients = instead
 data.raw["technology"]["optics"].prerequisites = {"logical"}
+data.raw["technology"]["advanced-oil-processing"].prerequisites = {"oil-processing", "chemistry"}
