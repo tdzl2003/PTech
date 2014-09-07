@@ -3,7 +3,7 @@ require "defines"
 
 game.oninit( 
     function() 
-        glob.staticEnergyGenerators = {} 
+        -- glob.staticEnergyGenerators = {} 
         glob.waterdrills = {}
         glob.seafillers= {}
     end
@@ -11,9 +11,9 @@ game.oninit(
 
 game.onload(
     function()
-        if not glob.staticEnergyGenerators then
-            glob.staticEnergyGenerators = {}
-        end
+        -- if not glob.staticEnergyGenerators then
+        --     glob.staticEnergyGenerators = {}
+        -- end
         if not glob.waterdrills then
             glob.waterdrills = {}
         end
@@ -30,10 +30,10 @@ end
 game.onevent(
     defines.events.onbuiltentity,
     function(event)
-        if event.createdentity.name:find("generator", 1, true) then
-            table.insert(glob.staticEnergyGenerators, event.createdentity)
-            event.createdentity.energy = 1000000000
-        end
+        -- if event.createdentity.name:find("generator", 1, true) then
+        --     table.insert(glob.staticEnergyGenerators, event.createdentity)
+        --     event.createdentity.energy = 1000000000
+        -- end
         if event.createdentity.name == "water-drill" then
             table.insert(glob.waterdrills, event.createdentity)
         end
@@ -68,15 +68,15 @@ game.onevent(defines.events.ontick, function(event)
     end
 
     -- fill energy generators.
-    if (event.tick % 60 == 53) then
-        for index, generator in ipairs(glob.staticEnergyGenerators) do
-            if not generator.valid then 
-                table.remove(glob.staticEnergyGenerators, index)
-            else
-                generator.energy = 1000000000
-            end
-        end
-    end
+    -- if (event.tick % 60 == 53) then
+    --     for index, generator in ipairs(glob.staticEnergyGenerators) do
+    --         if not generator.valid then 
+    --             table.remove(glob.staticEnergyGenerators, index)
+    --         else
+    --             generator.energy = 1000000000
+    --         end
+    --     end
+    -- end
 
     -- drill water
     if (event.tick % 60 == 29) then

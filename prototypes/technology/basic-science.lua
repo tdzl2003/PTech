@@ -6,7 +6,7 @@ data:extend({
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
-	      count= 100,
+	      count= 50,
 	      time= 15,
 	      ingredients= { {"science-pack-1", 1}}
 	    },
@@ -52,8 +52,8 @@ data:extend({
 	    unit=
 	    {
 	      count= 100,
-	      time= 30,
-	      ingredients= { {"science-pack-1", 2}, {"science-pack-2", 2}}
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
 	    },
 	    effects=
 	    {

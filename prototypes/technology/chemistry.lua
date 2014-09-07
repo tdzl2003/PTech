@@ -7,8 +7,8 @@ data:extend({
 	    unit=
 	    {
 	      count= 100,
-	      time= 30,
-	      ingredients= { {"science-pack-1", 2}, {"science-pack-2", 2}}
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
 	    },
 	    effects=
 	    {
@@ -25,9 +25,9 @@ data:extend({
 		icon="__PTech__/graphics/technology/chemistry.png",
 	    unit=
 	    {
-	      count= 100,
-	      time= 30,
-	      ingredients= { {"science-pack-1", 2}, {"science-pack-2", 2}}
+	      count= 200,
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
 	    },
 	    effects=
 	    {

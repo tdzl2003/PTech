@@ -50,7 +50,7 @@ data:extend
     },
     {
         type = "recipe",
-        name = "fluid-fuel-from-light-oil",
+        name = "liquid-fuel-from-light-oil",
         category = "chemistry",
         enabled = "false",
         energy_required = 2,
@@ -60,14 +60,14 @@ data:extend
         },
         results=
         {
-            {type="fluid", name="fluid-fuel", amount=1}
+            {type="fluid", name="liquid-fuel", amount=1}
         },
         subgroup = "fluid",
         order = "b[fluid-chemistry]-f-2"
     },
     {
         type = "recipe",
-        name = "fluid-fuel-from-petroleum-gas",
+        name = "liquid-fuel-from-petroleum-gas",
         category = "chemistry",
         enabled = "false",
         energy_required = 2,
@@ -77,7 +77,7 @@ data:extend
         },
         results=
         {
-            {type="fluid", name="fluid-fuel", amount=1}
+            {type="fluid", name="liquid-fuel", amount=1}
         },
         subgroup = "fluid",
         order = "b[fluid-chemistry]-f-3"

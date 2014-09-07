@@ -1,7 +1,7 @@
 data:extend{
   	{
 	    type = "fluid",
-	    name = "fluid-fuel",
+	    name = "liquid-fuel",
 	    default_temperature = 25,
 	    heat_capacity = "1KJ",
 	    base_color = {r=0.3, g=0.3, b=0},
