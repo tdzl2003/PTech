@@ -17,6 +17,7 @@ require("prototypes.entity.furnaces")
 require("prototypes.entity.underground-drill")
 require("prototypes.entity.plant")
 require("prototypes.entity.topography-reform")
+require("prototypes.entity.space-plan")
 
 -- Recipe
 require("prototypes.recipe.generators")

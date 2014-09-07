@@ -3,6 +3,18 @@ table.insert(data.raw["lab"]["lab"].inputs, "surface-sample")
 table.insert(data.raw["lab"]["lab"].inputs, "organism-sample")
 
 data:extend{
+	-- launch platform
+	{
+        type = "item",
+        name = "rocket-launch-platform",
+        icon = "__base__/graphics/icons/rocket-defense.png",
+        flags = {"goes-to-quickbar"},
+        subgroup = "production-machine",
+        order = "h",
+        place_result = "rocket-launch-platform",
+        stack_size = 1
+    },
+
 	-- experiment data
 	{
 		type = "item",

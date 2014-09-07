@@ -32,6 +32,10 @@ data:extend{
 				type= "unlock-recipe",
 				recipe= "atmosphere-experiment"
 			},
+			{
+				type= "unlock-recipe",
+				recipe= "rocket-launch-platform"
+			},
 		}
 	},
 	{
@@ -95,7 +99,7 @@ data:extend{
 	{
 		type = "technology",
 	    name= "aircraft-structure",
-	    prerequisites= {"space-plan"},
+	    prerequisites= {"space-plan", "fluid-fuel"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {

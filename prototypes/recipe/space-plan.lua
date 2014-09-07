@@ -4,6 +4,20 @@ data:extend{
 		name= "space-plan"
 	},
 
+	-- launch platform
+	{
+		type = "recipe",
+		name = "rocket-launch-platform",
+		enabled = false,
+		ingredients = {
+			{"steel-plate", 50},
+			{"stone-brick", 100},
+			{"advanced-circuit", 5}
+		},
+		energy_required = 1,
+		result = "rocket-launch-platform"
+	},
+
 	-- Recipes for items
 	{
 		type = "recipe",
@@ -140,7 +154,6 @@ data:extend{
 		energy_required = 1,
 		result = "experimental-rocket-3"
 	},
-
 
 	-- Space plan
 	{
