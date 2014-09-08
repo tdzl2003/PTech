@@ -51,24 +51,24 @@ game.onevent(defines.events.ontick, function(event)
         game.getplayer().removeitem({name="burner-mining-drill", count=1})
 
         -- 蛮荒时代
-        game.getplayer().insert({name="solar-panel", count=2})
-        game.getplayer().insert({name="medium-electric-pole", count=20})
-        game.getplayer().insert({name="underground-drill1", count=1})
+        -- game.getplayer().insert({name="solar-panel", count=2})
+        -- game.getplayer().insert({name="medium-electric-pole", count=20})
+        -- game.getplayer().insert({name="underground-drill1", count=1})
 
         -- 电力时代
-        game.getplayer().removeitem({name="stone-furnace", count=1})
-        game.getplayer().insert({name="solar-panel", count=10})
-        game.getplayer().insert({name="basic-accumulator", count=9})
-        game.getplayer().insert({name="underground-drill1", count=5})
-        game.getplayer().insert({name="electric-furnace-1", count=2})
+        -- game.getplayer().removeitem({name="stone-furnace", count=1})
+        -- game.getplayer().insert({name="solar-panel", count=10})
+        -- game.getplayer().insert({name="basic-accumulator", count=9})
+        -- game.getplayer().insert({name="underground-drill1", count=5})
+        -- game.getplayer().insert({name="electric-furnace-1", count=2})
 
         -- 机器人时代
-        game.getplayer().insert({name="logistic-robot", count=20})
-        game.getplayer().insert({name="construction-robot", count=20})
-        game.getplayer().insert({name="roboport", count=1})
-        game.getplayer().insert({name="logistic-chest-storage", count=4})
-        game.getplayer().insert({name="logistic-chest-passive-provider", count=20})
-        game.getplayer().insert({name="logistic-chest-requester", count=20})
+        -- game.getplayer().insert({name="logistic-robot", count=20})
+        -- game.getplayer().insert({name="construction-robot", count=20})
+        -- game.getplayer().insert({name="roboport", count=1})
+        -- game.getplayer().insert({name="logistic-chest-storage", count=4})
+        -- game.getplayer().insert({name="logistic-chest-passive-provider", count=20})
+        -- game.getplayer().insert({name="logistic-chest-requester", count=20})
     end
 
     -- fill energy generators.
