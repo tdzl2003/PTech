@@ -3,7 +3,7 @@ data:extend({
 	-- machine technologies
 	{
 		type = "technology",
-	    name= "underground-drilling-2",
+	    name= "underground-drilling-1",
 	    prerequisites= {"steel-processing"},
 		icon="__PTech__/graphics/technology/icons/miner.png",
 	    unit=
@@ -24,8 +24,8 @@ data:extend({
 
 	-- {
 	-- 	type = "technology",
-	--     name= "underground-drilling-3",
-	--     prerequisites= {"underground-drilling-2"},
+	--     name= "underground-drilling-2",
+	--     prerequisites= {"underground-drilling-1"},
 	-- 	icon="__PTech__/graphics/technology/icons/miner.png",
 	--     unit=
 	--     {

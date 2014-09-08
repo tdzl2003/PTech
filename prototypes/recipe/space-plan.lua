@@ -116,6 +116,7 @@ data:extend{
 		enabled = false,
 		ingredients = {
 			{"steel-plate", 5},
+			{"iron-gear-wheel", 2},
 			{"electronic-circuit", 5}
 		},
 		energy_required = 20,
@@ -129,6 +130,7 @@ data:extend{
 		enabled = false,
 		ingredients = {
 			{"steel-plate", 3},
+			{"iron-gear-wheel", 4},
 			{"electronic-circuit", 5}
 		},
 		energy_required = 20,
