@@ -62,7 +62,7 @@ data:extend{
         icon = "__base__/graphics/icons/rocket-defense.png",
         flags = {"goes-to-quickbar"},
         subgroup = "site-building",
-        order = "h",
+        order = "g-a-a",
         place_result = "rocket-launch-platform",
         stack_size = 1
     },
@@ -71,28 +71,28 @@ data:extend{
 	{
 		type = "item",
 		name = "experiment-data",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__base__/graphics/icons/blueprint.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "space-science",
-		order = "a",
+		order = "g-b-a",
 		stack_size = 200
 	},
 	{
 		type = "item",
 		name = "surface-sample",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__base__/graphics/icons/small-stone-rock.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "space-science",
-		order = "b",
+		order = "g-b-b",
 		stack_size = 200
 	},
 	{
 		type = "item",
 		name = "organism-sample",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__base__/graphics/icons/brown-fluff-dry.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "space-science",
-		order = "c",
+		order = "g-b-c",
 		stack_size = 200
 	},
 
@@ -100,10 +100,10 @@ data:extend{
 	{
 		type = "item",
 		name = "solid-fuel-booster",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__PTech__/graphics/icons/parts/solid-fuel-booster.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-thruster",
-		order = "a-1",
+		order = "g-c-a-1",
 		stack_size = 1
 	},
 
@@ -111,10 +111,10 @@ data:extend{
 	{
 		type = "item",
 		name = "liquid-fuel-tank",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__PTech__/graphics/icons/parts/fuel-tank.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-thruster",
-		order = "b-1",
+		order = "g-c-b-1",
 		stack_size = 1
 	},
 
@@ -122,10 +122,10 @@ data:extend{
 	{
 		type = "item",
 		name = "liquid-fuel-engine",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__PTech__/graphics/icons/parts/liquid-fuel-engine.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-thruster",
-		order = "c-1",
+		order = "g-c-c-1",
 		stack_size = 1
 	},
 
@@ -133,10 +133,10 @@ data:extend{
 	{
 		type = "item",
 		name = "remote-command-pod",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__PTech__/graphics/icons/parts/command-pod.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-command-pod",
-		order = "a",
+		order = "g-d-a",
 		stack_size = 1
 	},
 
@@ -144,10 +144,10 @@ data:extend{
 	{
 		type = "item",
 		name = "basic-sensor",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__PTech__/graphics/icons/parts/basic-sensor.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "space-science-device",
-		order = "h",
+		order = "g-e-a",
 		stack_size = 1
 	},
 
@@ -155,20 +155,20 @@ data:extend{
 	{
 		type = "item",
 		name = "stack-decoupler",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__PTech__/graphics/icons/parts/stack-decoupler.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-structure",
-		order = "h",
+		order = "g-f-a",
 		stack_size = 1
 	},
 
 	{
 		type = "item",
 		name = "radial-decoupler",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__PTech__/graphics/icons/parts/radial-decoupler.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-structure",
-		order = "h",
+		order = "g-f-b",
 		stack_size = 1
 	},
 
@@ -177,28 +177,28 @@ data:extend{
 	{
 		type = "item",
 		name = "experimental-rocket-1",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__base__/graphics/icons/rocket.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
-		order = "h",
+		order = "g-g-a",
 		stack_size = 1
 	},
 	{
 		type = "item",
 		name = "experimental-rocket-2",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__base__/graphics/icons/rocket.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
-		order = "h",
+		order = "g-g-b",
 		stack_size = 1
 	},
 	{
 		type = "item",
 		name = "experimental-rocket-3",
-		icon = "__PTech__/graphics/icons/germling.png",
+		icon = "__base__/graphics/icons/rocket.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
-		order = "h",
+		order = "g-g-c",
 		stack_size = 1
 	},
 }

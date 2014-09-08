@@ -3,7 +3,7 @@ data:extend{
 		type = "technology",
 	    name= "space-plan",
 	    prerequisites= {"rocketry", "mechanics"},
-		icon = "__base__/graphics/technology/rocket-damage.png",
+		icon = "__base__/graphics/technology/rocket-travel.png",
 	    unit=
 	    {
 	      count= 100,

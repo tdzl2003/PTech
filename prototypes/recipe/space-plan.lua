@@ -160,6 +160,7 @@ data:extend{
 		type = "recipe",
 		name = "atmosphere-experiment",
 		category = "space-plan",
+		icon = "__base__/graphics/technology/rocket-travel.png",
 		enabled = false,
 		ingredients = {
 			{"experimental-rocket-1", 1}
@@ -173,6 +174,7 @@ data:extend{
 		type = "recipe",
 		name = "outer-space-experiment",
 		category = "space-plan",
+		icon = "__base__/graphics/technology/rocket-travel.png",
 		enabled = false,
 		ingredients = {
 			{"experimental-rocket-2", 1}
@@ -186,6 +188,7 @@ data:extend{
 		type = "recipe",
 		name = "orbit-experiment",
 		category = "space-plan",
+		icon = "__base__/graphics/technology/rocket-travel.png",
 		enabled = false,
 		ingredients = {
 			{"experimental-rocket-3", 1}
