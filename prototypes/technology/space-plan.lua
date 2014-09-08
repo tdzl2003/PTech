@@ -18,7 +18,7 @@ data:extend{
 			},
 			{
 				type= "unlock-recipe",
-				recipe= "unmanned-command-pod"
+				recipe= "remote-command-pod"
 			},
 			{
 				type= "unlock-recipe",
@@ -41,7 +41,7 @@ data:extend{
 	{
 		type = "technology",
 	    name= "fuel-optimize",
-	    prerequisites= {"space-plan"},
+	    prerequisites= {"oil-processing"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {

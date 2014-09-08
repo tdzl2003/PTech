@@ -61,7 +61,7 @@ data:extend{
 
 	{
 		type = "recipe",
-		name = "unmanned-command-pod",
+		name = "remote-command-pod",
 		category = "advanced-crafting",
 		enabled = false,
 		ingredients = {
@@ -71,7 +71,7 @@ data:extend{
 			{"advanced-circuit", 5}
 		},
 		energy_required = 20,
-		result = "unmanned-command-pod"
+		result = "remote-command-pod"
 	},
 
 	{
@@ -120,7 +120,7 @@ data:extend{
 		enabled = false,
 		ingredients = {
 			{"basic-sensor", 2},
-			{"unmanned-command-pod", 1},
+			{"remote-command-pod", 1},
 			{"solid-fuel-booster", 1}
 		},
 		energy_required = 1,
@@ -133,7 +133,7 @@ data:extend{
 		enabled = false,
 		ingredients = {
 			{"basic-sensor", 2},
-			{"unmanned-command-pod", 1},
+			{"remote-command-pod", 1},
 			{"liquid-fuel-engine", 1},
 			{"liquid-fuel-tank", 1}
 		},

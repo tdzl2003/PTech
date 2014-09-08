@@ -47,7 +47,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "chemistry",
-	    prerequisites= {"logical"},
+	    prerequisites= {"logical", "oil-processing"},
 		icon="__PTech__/graphics/technology/chemistry.png",
 	    unit=
 	    {

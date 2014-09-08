@@ -49,12 +49,16 @@ game.onevent(defines.events.ontick, function(event)
     if (not glob.runOncePTech) then
         glob.runOncePTech = true
         game.getplayer().removeitem({name="burner-mining-drill", count=1})
-        game.getplayer().removeitem({name="stone-furnace", count=1})
+
+        -- 蛮荒时代
+        game.getplayer().insert({name="solar-panel", count=2})
+        game.getplayer().insert({name="medium-electric-pole", count=20})
+        game.getplayer().insert({name="underground-drill1", count=1})
 
         -- 电力时代
-        game.getplayer().insert({name="solar-panel", count=12})
+        game.getplayer().removeitem({name="stone-furnace", count=1})
+        game.getplayer().insert({name="solar-panel", count=10})
         game.getplayer().insert({name="basic-accumulator", count=9})
-        game.getplayer().insert({name="medium-electric-pole", count=20})
         game.getplayer().insert({name="underground-drill1", count=5})
         game.getplayer().insert({name="electric-furnace-1", count=2})
 
