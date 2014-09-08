@@ -7,7 +7,7 @@ data:extend{
 	-- launch platform
 	{
 		type = "recipe",
-		name = "rocket-launch-platform",
+		name = "rocket-experiment-platform",
 		enabled = false,
 		ingredients = {
 			{"steel-plate", 50},
@@ -15,8 +15,29 @@ data:extend{
 			{"advanced-circuit", 5}
 		},
 		energy_required = 1,
+		result = "rocket-experiment-platform"
+	},
+	{
+		type = "recipe",
+		name = "rocket-platform-transform-launch",
+		enabled = false,
+		ingredients = {
+			{"rocket-experiment-platform", 1}
+		},
+		energy_required = 1,
 		result = "rocket-launch-platform"
 	},
+	{
+		type = "recipe",
+		name = "rocket-platform-transform-experimental",
+		enabled = false,
+		ingredients = {
+			{"rocket-launch-platform", 1}
+		},
+		energy_required = 1,
+		result = "rocket-experiment-platform"
+	},
+	
 
 	-- Recipes for items
 	{
@@ -155,47 +176,4 @@ data:extend{
 		result = "experimental-rocket-3"
 	},
 
-	-- Space plan
-	{
-		type = "recipe",
-		name = "atmosphere-experiment",
-		category = "space-plan",
-		icon = "__base__/graphics/technology/rocket-travel.png",
-		enabled = false,
-		ingredients = {
-			{"experimental-rocket-1", 1}
-		},
-		energy_required = 600,
-		results = {
-			{type="item", name="experiment-data", amount=1}
-		}
-	},
-	{
-		type = "recipe",
-		name = "outer-space-experiment",
-		category = "space-plan",
-		icon = "__base__/graphics/technology/rocket-travel.png",
-		enabled = false,
-		ingredients = {
-			{"experimental-rocket-2", 1}
-		},
-		energy_required = 900,
-		results = {
-			{type="item", name="experiment-data", amount=2}
-		}
-	},
-	{
-		type = "recipe",
-		name = "orbit-experiment",
-		category = "space-plan",
-		icon = "__base__/graphics/technology/rocket-travel.png",
-		enabled = false,
-		ingredients = {
-			{"experimental-rocket-3", 1}
-		},
-		energy_required = 1200,
-		results = {
-			{type="item", name="experiment-data", amount=5}
-		}
-	},
 }

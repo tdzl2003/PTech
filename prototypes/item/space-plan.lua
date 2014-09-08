@@ -1,7 +1,3 @@
-table.insert(data.raw["lab"]["lab"].inputs, "experiment-data")
-table.insert(data.raw["lab"]["lab"].inputs, "surface-sample")
-table.insert(data.raw["lab"]["lab"].inputs, "organism-sample")
-
 data:extend{
 	-- item group
 	{
@@ -58,6 +54,16 @@ data:extend{
 	-- launch platform
 	{
         type = "item",
+        name = "rocket-experiment-platform",
+        icon = "__base__/graphics/icons/rocket-defense.png",
+        flags = {"goes-to-quickbar"},
+        subgroup = "site-building",
+        order = "g-a-a",
+        place_result = "rocket-experiment-platform",
+        stack_size = 1
+    },
+	{
+        type = "item",
         name = "rocket-launch-platform",
         icon = "__base__/graphics/icons/rocket-defense.png",
         flags = {"goes-to-quickbar"},
@@ -67,16 +73,7 @@ data:extend{
         stack_size = 1
     },
 
-	-- experiment data
-	{
-		type = "item",
-		name = "experiment-data",
-		icon = "__base__/graphics/icons/blueprint.png",
-		flags = {"goes-to-main-inventory"},
-		subgroup = "space-science",
-		order = "g-b-a",
-		stack_size = 200
-	},
+	-- sample data
 	{
 		type = "item",
 		name = "surface-sample",

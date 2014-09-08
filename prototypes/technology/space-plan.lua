@@ -1,3 +1,50 @@
+-- Space plan
+data:extend{
+	{
+		type = "technology",
+	    name= "atmosphere-experiment",
+	    prerequisites= {"space-plan"},
+		icon = "__base__/graphics/technology/rocket-damage.png",
+	    unit=
+	    {
+	      count= 10,
+	      time= 600,
+	      ingredients= { {"experimental-rocket-1", 1}}
+	    },
+	    effects={
+		}
+	},
+	{
+		type = "technology",
+	    name= "outer-space-experiment",
+	    prerequisites= {"atmosphere-experiment", "fluid-fuel"},
+		icon = "__base__/graphics/technology/rocket-damage.png",
+	    unit=
+	    {
+	      count = 10,
+	      time = 900,
+	      ingredients= { {"experimental-rocket-2", 1}}
+	    },
+	    effects={
+		}
+	},
+	{
+		type = "technology",
+	    name= "orbit-experiment",
+	    prerequisites= {"outer-space-experiment", "aircraft-structure"},
+		icon = "__base__/graphics/technology/rocket-damage.png",
+	    unit=
+	    {
+	      count = 10,
+	      time = 900,
+	      ingredients= { {"experimental-rocket-3", 1}}
+	    },
+	    effects={
+		}
+	},
+}
+
+-- Technologies
 data:extend{
 	{
 		type = "technology",
@@ -30,11 +77,7 @@ data:extend{
 			},
 			{
 				type= "unlock-recipe",
-				recipe= "atmosphere-experiment"
-			},
-			{
-				type= "unlock-recipe",
-				recipe= "rocket-launch-platform"
+				recipe= "rocket-experiment-platform"
 			},
 		}
 	},
@@ -60,13 +103,13 @@ data:extend{
 	{
 		type = "technology",
 	    name= "fluid-fuel",
-	    prerequisites= {"space-plan"},
+	    prerequisites= {"space-plan", "atmosphere-experiment"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	      count= 10,
-	      time= 150,
-	      ingredients= { {"science-pack-1", 10}, {"science-pack-2", 10}, {"science-pack-3", 5}, {"experiment-data", 1}}
+	      count= 100,
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },
 	    effects=
 	    {
@@ -90,22 +133,18 @@ data:extend{
 				type= "unlock-recipe",
 				recipe= "experimental-rocket-2"
 			},
-			{
-				type= "unlock-recipe",
-				recipe= "outer-space-experiment"
-			},
 		}
 	},
 	{
 		type = "technology",
 	    name= "aircraft-structure",
-	    prerequisites= {"space-plan", "fluid-fuel"},
+	    prerequisites= {"space-plan", "fluid-fuel", "outer-space-experiment"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	      count= 50,
-	      time= 150,
-	      ingredients= { {"science-pack-1", 10}, {"science-pack-2", 10}, {"science-pack-3", 5}, {"experiment-data", 1}}
+	        count= 150,
+	        time= 15,
+	        ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },
 	    effects=
 	    {
@@ -120,10 +159,6 @@ data:extend{
 			{
 				type= "unlock-recipe",
 				recipe= "experimental-rocket-3"
-			},
-			{
-				type= "unlock-recipe",
-				recipe= "orbit-experiment"
 			},
 		}
 	},
