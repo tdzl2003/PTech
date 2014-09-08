@@ -12,7 +12,7 @@ data:extend
         },
         results=
         {
-            {type="fluid", name="petroleum-gas", amount=1}
+            {type="fluid", name="petroleum-gas", amount=3}
         },
         subgroup = "fluid",
         order = "a[oil-processing]-g"
@@ -25,8 +25,7 @@ data:extend
         energy_required = 20,
         ingredients =
         {
-            {type="item", name="coal", amount=1},
-            {type="fluid", name="water", amount=1}
+            {type="item", name="coal", amount=2},
         },
         results=
         {
