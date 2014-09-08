@@ -12,7 +12,7 @@ data:extend
         },
         results=
         {
-            {type="fluid", name="petroleum-gas", amount=1}
+            {type="fluid", name="petroleum-gas", amount=3}
         },
         subgroup = "fluid",
         order = "a[oil-processing]-g"
