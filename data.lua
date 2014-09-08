@@ -40,5 +40,3 @@ require("prototypes.technology.space-plan")
 
 -- Overrides
 -- data.raw["recipe"][name].ingredients = instead
-data.raw["technology"]["optics"].prerequisites = {"logical"}
-table.insert(data.raw["technology"]["advanced-oil-processing"].prerequisites, "chemistry")

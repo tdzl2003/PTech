@@ -1,3 +1,10 @@
+data.raw["technology"]["optics"].prerequisites = {"logical"}
+table.insert(data.raw["technology"]["advanced-oil-processing"].prerequisites, "chemistry")
+table.insert(data.raw["technology"]["fluid-handling"].prerequisites, "mechanics")
+table.insert(data.raw["technology"]["sulfur-processing"].prerequisites, "chemistry")
+table.insert(data.raw["technology"]["plastics"].prerequisites, "chemistry")
+data.raw["technology"]["flammables"].prerequisites = {"thermology"}
+
 data:extend({
 	{
 		type = "technology",
@@ -21,9 +28,9 @@ data:extend({
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
-	      count= 200,
-	      time= 30,
-	      ingredients= { {"science-pack-1", 2},{"science-pack-2", 2}}
+	      count= 75,
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1},{"science-pack-2", 1}}
 	    },
 	    effects=
 	    {
@@ -36,9 +43,9 @@ data:extend({
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
-	      count= 40,
-	      time= 30,
-	      ingredients= { {"science-pack-1", 2}, {"science-pack-2", 2}}
+	      count= 100,
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
 	    },
 	    effects=
 	    {
@@ -51,9 +58,9 @@ data:extend({
 		icon="__PTech__/graphics/technology/chemistry.png",
 	    unit=
 	    {
-	      count= 100,
-	      time= 15,
-	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
+	      count= 50,
+	      time= 30,
+	      ingredients= { {"science-pack-1", 2}, {"science-pack-2", 2}}
 	    },
 	    effects=
 	    {
@@ -62,7 +69,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "thermology",
-	    prerequisites= {"mechanics"},
+	    prerequisites= {"mechanics", "atmosphere-experiment"},
 		icon="__PTech__/graphics/technology/flammables.png",
 	    unit=
 	    {

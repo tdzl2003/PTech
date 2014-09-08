@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "ferment-gas",
-	    prerequisites= {"chemistry", "oil-processing", "agriculture"},
+	    prerequisites= {"chemistry", "agriculture"},
 		icon="__PTech__/graphics/technology/chemistry.png",
 	    unit=
 	    {
@@ -21,7 +21,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "carbon-lubricant",
-	    prerequisites= {"chemistry", "oil-processing", "mechanics"},
+	    prerequisites= {"mechanics"},
 		icon="__PTech__/graphics/technology/chemistry.png",
 	    unit=
 	    {
@@ -36,5 +36,24 @@ data:extend({
 				recipe= "carbon-lubricant"
 			},
 		}
-	}
+	},
+	{
+		type = "technology",
+	    name= "fuel-optimize",
+	    prerequisites= {"advanced-oil-processing"},
+		icon = "__base__/graphics/technology/rocket-damage.png",
+	    unit=
+	    {
+	      count= 50,
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1} }
+	    },
+	    effects=
+	    {
+	    	{
+				type= "unlock-recipe",
+				recipe= "solid-fuel-from-coal"
+			},
+		}
+	},
 })

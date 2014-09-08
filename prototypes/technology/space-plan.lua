@@ -83,27 +83,8 @@ data:extend{
 	},
 	{
 		type = "technology",
-	    name= "fuel-optimize",
-	    prerequisites= {"oil-processing"},
-		icon = "__base__/graphics/technology/rocket-damage.png",
-	    unit=
-	    {
-	      count= 50,
-	      time= 15,
-	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1} }
-	    },
-	    effects=
-	    {
-	    	{
-				type= "unlock-recipe",
-				recipe= "solid-fuel-from-coal"
-			},
-		}
-	},
-	{
-		type = "technology",
 	    name= "fluid-fuel",
-	    prerequisites= {"space-plan", "atmosphere-experiment"},
+	    prerequisites= {"space-plan", "thermology"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
