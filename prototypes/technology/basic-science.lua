@@ -69,7 +69,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "thermology",
-	    prerequisites= {"mechanics", "atmosphere-experiment"},
+	    prerequisites= {"mechanics"},
 		icon="__PTech__/graphics/technology/flammables.png",
 	    unit=
 	    {
