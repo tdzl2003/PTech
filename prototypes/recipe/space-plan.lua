@@ -10,11 +10,11 @@ data:extend{
 		name = "rocket-experiment-platform",
 		enabled = false,
 		ingredients = {
-			{"steel-plate", 50},
-			{"stone-brick", 100},
-			{"advanced-circuit", 5}
+			{"steel-plate", 75},
+			{"stone-brick", 75},
+			{"advanced-circuit", 75}
 		},
-		energy_required = 1,
+		energy_required = 15,
 		result = "rocket-experiment-platform"
 	},
 	{
