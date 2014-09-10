@@ -22,7 +22,7 @@ data:extend
         name = "carbon-lubricant",
         category = "chemistry",
         enabled = "false",
-        energy_required = 20,
+        energy_required = 2,
         ingredients =
         {
             {type="item", name="coal", amount=2},

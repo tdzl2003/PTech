@@ -17,7 +17,7 @@ data:extend{
 	{
 		type = "technology",
 	    name= "outer-space-experiment",
-	    prerequisites= {"atmosphere-experiment", "fluid-fuel"},
+	    prerequisites= {"atmosphere-experiment"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
@@ -31,7 +31,7 @@ data:extend{
 	{
 		type = "technology",
 	    name= "orbit-experiment",
-	    prerequisites= {"outer-space-experiment", "aircraft-structure"},
+	    prerequisites= {"outer-space-experiment"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
@@ -84,7 +84,7 @@ data:extend{
 	{
 		type = "technology",
 	    name= "fluid-fuel",
-	    prerequisites= {"space-plan", "thermology"},
+	    prerequisites= {"atmosphere-experiment", "thermology"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
@@ -119,7 +119,7 @@ data:extend{
 	{
 		type = "technology",
 	    name= "aircraft-structure",
-	    prerequisites= {"space-plan", "fluid-fuel", "outer-space-experiment"},
+	    prerequisites= {"fluid-fuel", "outer-space-experiment"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
