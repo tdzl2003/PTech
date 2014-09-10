@@ -1,3 +1,5 @@
+data.raw["item"]["solid-fuel"].stack_size = 200
+
 data:extend{
 	-- item group
 	{
