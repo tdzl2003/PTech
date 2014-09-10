@@ -101,7 +101,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-thruster",
 		order = "g-c-a-1",
-		stack_size = 1
+		stack_size = 5
 	},
 
 	-- fuel tank
@@ -112,7 +112,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-thruster",
 		order = "g-c-b-1",
-		stack_size = 1
+		stack_size = 5
 	},
 
 	-- engine
@@ -123,7 +123,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-thruster",
 		order = "g-c-c-1",
-		stack_size = 1
+		stack_size = 5
 	},
 
 	-- command pod
@@ -134,7 +134,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-command-pod",
 		order = "g-d-a",
-		stack_size = 1
+		stack_size = 10
 	},
 
 	-- science device
@@ -145,7 +145,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "space-science-device",
 		order = "g-e-a",
-		stack_size = 1
+		stack_size = 20
 	},
 
 	-- structure
@@ -156,7 +156,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-structure",
 		order = "g-f-a",
-		stack_size = 1
+		stack_size = 50
 	},
 
 	{
@@ -166,7 +166,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rocket-structure",
 		order = "g-f-b",
-		stack_size = 1
+		stack_size = 50
 	},
 
 
@@ -178,7 +178,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
 		order = "g-g-a",
-		stack_size = 1
+		stack_size = 5
 	},
 	{
 		type = "item",
@@ -187,7 +187,7 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
 		order = "g-g-b",
-		stack_size = 1
+		stack_size = 5
 	},
 	{
 		type = "item",
@@ -196,6 +196,6 @@ data:extend{
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
 		order = "g-g-c",
-		stack_size = 1
+		stack_size = 5
 	},
 }
