@@ -21,7 +21,7 @@ data:extend{
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	      count = 10,
+	      count = 20,
 	      time = 900,
 	      ingredients= { {"experimental-rocket-2", 1}}
 	    },
@@ -35,8 +35,8 @@ data:extend{
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	      count = 10,
-	      time = 900,
+	      count = 40,
+	      time = 1200,
 	      ingredients= { {"experimental-rocket-3", 1}}
 	    },
 	    effects={

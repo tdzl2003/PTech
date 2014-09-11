@@ -22,26 +22,26 @@ data:extend({
 		upgrade = true
 	},
 
-	-- {
-	-- 	type = "technology",
-	--     name= "underground-drilling-2",
-	--     prerequisites= {"underground-drilling-1"},
-	-- 	icon="__PTech__/graphics/technology/icons/miner.png",
-	--     unit=
-	--     {
-	--       count= 200,
-	--       time= 25,
-	--       ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
-	--     },
-	--     effects=
-	--     {
-	-- 		{
-	-- 			type= "unlock-recipe",
-	-- 			recipe= "underground-drill3"
-	-- 		}
-	-- 	},
-	-- 	upgrade = true
-	-- },
+	{
+		type = "technology",
+	    name= "underground-drilling-2",
+	    prerequisites= {"underground-drilling-1"},
+		icon="__PTech__/graphics/technology/icons/miner.png",
+	    unit=
+	    {
+	      count= 200,
+	      time= 25,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
+	    },
+	    effects=
+	    {
+			{
+				type= "unlock-recipe",
+				recipe= "underground-drill3"
+			}
+		},
+		upgrade = true
+	},
 
 	-- {
 	-- 	type = "technology",

@@ -38,54 +38,54 @@ data:extend{
         place_result = "underground-drill3",
         stack_size = 50
     },
-    {
-        type = "item",
-        name = "underground-drill4",
-        icon = "__PTech__/graphics/icons/basic-mining-drill4.png",
-        flags = {"goes-to-quickbar"},
-        subgroup = "underground-drill",
-        order = "b-m-d-4",
-        place_result = "underground-drill4",
-        stack_size = 50
-    },
-    {
-        type = "item",
-        name = "underground-drill5",
-        icon = "__PTech__/graphics/icons/basic-mining-drill5.png",
-        flags = {"goes-to-quickbar"},
-        subgroup = "underground-drill",
-        order = "b-m-d-5",
-        place_result = "underground-drill5",
-        stack_size = 50
-    },
-    {
-        type = "item",
-        name = "underground-drill6",
-        icon = "__PTech__/graphics/icons/basic-mining-drill6.png",
-        flags = {"goes-to-quickbar"},
-        subgroup = "underground-drill",
-        order = "b-m-d-6",
-        place_result = "underground-drill6",
-        stack_size = 50
-    },
-    {
-        type = "item",
-        name = "underground-drill7",
-        icon = "__PTech__/graphics/icons/basic-mining-drill6.png",
-        flags = {"goes-to-quickbar"},
-        subgroup = "underground-drill",
-        order = "b-m-d-7",
-        place_result = "underground-drill7",
-        stack_size = 50
-    },
-    {
-        type = "item",
-        name = "underground-drill8",
-        icon = "__PTech__/graphics/icons/basic-mining-drill6.png",
-        flags = {"goes-to-quickbar"},
-        subgroup = "underground-drill",
-        order = "b-m-d-8",
-        place_result = "underground-drill8",
-        stack_size = 50
-    },
+    -- {
+    --     type = "item",
+    --     name = "underground-drill4",
+    --     icon = "__PTech__/graphics/icons/basic-mining-drill4.png",
+    --     flags = {"goes-to-quickbar"},
+    --     subgroup = "underground-drill",
+    --     order = "b-m-d-4",
+    --     place_result = "underground-drill4",
+    --     stack_size = 50
+    -- },
+    -- {
+    --     type = "item",
+    --     name = "underground-drill5",
+    --     icon = "__PTech__/graphics/icons/basic-mining-drill5.png",
+    --     flags = {"goes-to-quickbar"},
+    --     subgroup = "underground-drill",
+    --     order = "b-m-d-5",
+    --     place_result = "underground-drill5",
+    --     stack_size = 50
+    -- },
+    -- {
+    --     type = "item",
+    --     name = "underground-drill6",
+    --     icon = "__PTech__/graphics/icons/basic-mining-drill6.png",
+    --     flags = {"goes-to-quickbar"},
+    --     subgroup = "underground-drill",
+    --     order = "b-m-d-6",
+    --     place_result = "underground-drill6",
+    --     stack_size = 50
+    -- },
+    -- {
+    --     type = "item",
+    --     name = "underground-drill7",
+    --     icon = "__PTech__/graphics/icons/basic-mining-drill6.png",
+    --     flags = {"goes-to-quickbar"},
+    --     subgroup = "underground-drill",
+    --     order = "b-m-d-7",
+    --     place_result = "underground-drill7",
+    --     stack_size = 50
+    -- },
+    -- {
+    --     type = "item",
+    --     name = "underground-drill8",
+    --     icon = "__PTech__/graphics/icons/basic-mining-drill6.png",
+    --     flags = {"goes-to-quickbar"},
+    --     subgroup = "underground-drill",
+    --     order = "b-m-d-8",
+    --     place_result = "underground-drill8",
+    --     stack_size = 50
+    -- },
 }

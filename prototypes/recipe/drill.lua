@@ -11,4 +11,15 @@ data:extend{
 		energy_required = 4,
 		result = "advanced-mining-drill"
 	},
+	{
+		type = "recipe",
+		name = "high-advanced-mining-drill",
+		enabled = false,
+		ingredients = {
+			{"advanced-mining-drill", 2},
+	      	{"speed-module", 4},
+		},
+		energy_required = 4,
+		result = "high-advanced-mining-drill"
+	},
 }

@@ -4,6 +4,7 @@ table.insert(data.raw["technology"]["fluid-handling"].prerequisites, "mechanics"
 table.insert(data.raw["technology"]["sulfur-processing"].prerequisites, "chemistry")
 table.insert(data.raw["technology"]["plastics"].prerequisites, "chemistry")
 data.raw["technology"]["flammables"].prerequisites = {"thermology"}
+data.raw["technology"]["advanced-electronics"].prerequisites = {"logical"}
 
 data:extend({
 	{
@@ -114,7 +115,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "particle",
-	    prerequisites= {"thermology"},
+	    prerequisites= {"thermology", "laser"},
 		icon="__PTech__/graphics/technology/laser.png",
 	    unit=
 	    {
