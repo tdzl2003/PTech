@@ -74,6 +74,7 @@ data:extend{
 		ingredients = {
 			{"engine-unit", 5},
 			{"electric-engine-unit", 5},
+			{"pipe", 20},
 			{"steel-plate", 10}
 		},
 		energy_required = 20,
