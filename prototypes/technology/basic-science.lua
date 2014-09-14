@@ -115,7 +115,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "particle",
-	    prerequisites= {"thermology", "laser"},
+	    prerequisites= {"thermology", "laser", "outer-space-experiment"},
 		icon="__PTech__/graphics/technology/laser.png",
 	    unit=
 	    {
@@ -130,7 +130,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "restricted-relativity",
-	    prerequisites= {"mechanics"},
+	    prerequisites= {"mechanics", "orbit-experiment"},
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
@@ -174,7 +174,7 @@ data:extend({
 	},
 	{
 		type = "technology",
-	    name= "astronomy",
+	    name= "worm-hole",
 	    prerequisites= {"general-relativity", "command-system", "bionics"},
 		icon="__PTech__/graphics/technology/alien-technology.png",
 	    unit=
@@ -190,7 +190,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "space-science",
-	    prerequisites= {"astronomy"},
+	    prerequisites= {"worm-hole"},
 		icon="__PTech__/graphics/technology/space.png",
 	    unit=
 	    {

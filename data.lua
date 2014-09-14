@@ -37,6 +37,7 @@ require("prototypes.technology.plant")
 require("prototypes.technology.generator")
 require("prototypes.technology.chemistry")
 require("prototypes.technology.space-plan")
+require("prototypes.technology.robots-upgrades")
 
 -- Overrides
 -- data.raw["recipe"][name].ingredients = instead

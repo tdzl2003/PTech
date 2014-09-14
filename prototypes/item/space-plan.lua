@@ -200,4 +200,13 @@ data:extend{
 		order = "g-g-c",
 		stack_size = 5
 	},
+	{
+		type = "item",
+		name = "experimental-rocket-4",
+		icon = "__base__/graphics/icons/rocket.png",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "rockets",
+		order = "g-g-c",
+		stack_size = 5
+	},
 }

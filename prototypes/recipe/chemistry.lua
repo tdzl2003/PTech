@@ -26,6 +26,7 @@ data:extend
         ingredients =
         {
             {type="item", name="coal", amount=2},
+            {type="fluid", name="water", amount=1}
         },
         results=
         {

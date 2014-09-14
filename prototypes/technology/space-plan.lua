@@ -143,4 +143,42 @@ data:extend{
 			},
 		}
 	},
+	{
+		type = "technology",
+	    name= "aircraft-structure-2",
+	    prerequisites= {"fluid-fuel", "outer-space-experiment"},
+		icon = "__base__/graphics/technology/rocket-damage.png",
+	    unit=
+	    {
+	        count= 150,
+	        time= 15,
+	        ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
+	    },
+	    effects=
+	    {
+			{
+				type= "unlock-recipe",
+				recipe= "radial-decoupler"
+			},
+			{
+				type= "unlock-recipe",
+				recipe= "experimental-rocket-4"
+			},
+		}
+	},
+	{
+		type = "technology",
+	    name= "aircraft-stability",
+	    prerequisites= {"aircraft-structure", "orbit-experiment"},
+		icon = "__base__/graphics/technology/rocket-damage.png",
+	    unit=
+	    {
+	        count= 150,
+	        time= 15,
+	        ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
+	    },
+	    effects=
+	    {
+		}
+	},
 }

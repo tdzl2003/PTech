@@ -172,11 +172,21 @@ data:extend{
 		ingredients = {
 			{"experimental-rocket-2", 1},
 			{"stack-decoupler", 1},
-			{"radial-decoupler", 3},
-			{"solid-fuel-booster", 4}
+			{"solid-fuel-booster", 1}
 		},
 		energy_required = 1,
 		result = "experimental-rocket-3"
 	},
-
+	{
+		type = "recipe",
+		name = "experimental-rocket-4",
+		enabled = false,
+		ingredients = {
+			{"experimental-rocket-3", 1},
+			{"radial-decoupler", 3},
+			{"solid-fuel-booster", 3}
+		},
+		energy_required = 1,
+		result = "experimental-rocket-4"
+	},
 }
