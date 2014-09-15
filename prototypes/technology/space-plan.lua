@@ -135,10 +135,6 @@ data:extend{
 			},
 			{
 				type= "unlock-recipe",
-				recipe= "radial-decoupler"
-			},
-			{
-				type= "unlock-recipe",
 				recipe= "experimental-rocket-3"
 			},
 		}
@@ -150,7 +146,7 @@ data:extend{
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	        count= 150,
+	        count= 300,
 	        time= 15,
 	        ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },

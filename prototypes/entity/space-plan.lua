@@ -35,6 +35,7 @@ data:extend({
 	        "experimental-rocket-1",
 		    "experimental-rocket-2",
 		    "experimental-rocket-3",
+		    "experimental-rocket-4",
 	    },
 	    module_slots = 0
   	},
