@@ -10,6 +10,6 @@ table.insert(data.raw["technology"]["automation-2"].effects,
 table.insert(data.raw["technology"]["automation-3"].effects,
 	{
 		type = "unlock-recipe",
-		recipe = "advanced-mining-drill"
+		recipe = "high-advanced-mining-drill"
 	}
 )
