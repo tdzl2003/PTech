@@ -1,4 +1,24 @@
 data:extend({
+	{
+		type = "technology",
+	    name= "underground-drilling-water",
+	    prerequisites= {"underground-drilling-1"},
+		icon="__PTech__/graphics/technology/icons/miner.png",
+	    unit=
+	    {
+	      count= 50,
+	      time= 20,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
+	    },
+	    effects=
+	    {
+			{
+				type= "unlock-recipe",
+				recipe= "well"
+			}
+		},
+		upgrade = true
+	},
 	
 	-- machine technologies
 	{

@@ -10,6 +10,16 @@ data:extend{
 data:extend{
     {
         type = "item",
+        name = "well",
+        icon = "__PTech__/graphics/icons/basic-mining-drill1.png",
+        flags = {"goes-to-quickbar"},
+        subgroup = "underground-drill",
+        order = "b-m-d-0",
+        place_result = "well",
+        stack_size = 50
+    },
+    {
+        type = "item",
         name = "underground-drill1",
         icon = "__PTech__/graphics/icons/basic-mining-drill1.png",
         flags = {"goes-to-quickbar"},

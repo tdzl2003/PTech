@@ -1,6 +1,74 @@
 data:extend({
 	{
 		type = "assembling-machine",
+	    name = "well",
+	    icon = "__PTech__/graphics/icons/basic-mining-drill1.png",
+	    flags = {"placeable-neutral","placeable-player", "player-creation"},
+	    minable = {hardness = 0.2, mining_time = 0.5, result = "well"},
+	    max_health = 300,
+	    corpse = "small-remnants",
+	    collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
+    	selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+    	fluid_boxes =
+	    {
+			{
+				production_type = "output",
+				pipe_picture = assembler3pipepictures(),
+				pipe_covers = pipecoverspictures(),
+				base_area = 100,
+				base_level = 1,
+				pipe_connections = {{ type="output", position = {0, 1} }}
+			},
+			{
+				production_type = "output",
+				pipe_picture = assembler3pipepictures(),
+				pipe_covers = pipecoverspictures(),
+				base_area = 100,
+				base_level = 1,
+				pipe_connections = {{ type="output", position = {1, 0} }}
+			},
+			{
+				production_type = "output",
+				pipe_picture = assembler3pipepictures(),
+				pipe_covers = pipecoverspictures(),
+				base_area = 100,
+				base_level = 1,
+				pipe_connections = {{ type="output", position = {0, -1} }}
+			},
+			{
+				production_type = "output",
+				pipe_picture = assembler3pipepictures(),
+				pipe_covers = pipecoverspictures(),
+				base_area = 100,
+				base_level = 1,
+				pipe_connections = {{ type="output", position = {-1, 0} }}
+			},
+			off_when_no_fluid_recipe = false
+	    },
+    	animation =
+	    {
+	    	filename = "__base__/graphics/entity/boiler/boiler-down.png",
+	        priority = "extra-high",
+	        frame_width = 66,
+	        frame_height = 72, --shift = {0.05, 0}
+	        line_length = 1,
+	        frame_count = 1
+		},
+		crafting_categories = {"underground-drill-water"},
+		crafting_speed = 1,
+		energy_source =
+	    {
+	      type = "electric",
+	      usage_priority = "secondary-input",
+	      emissions = 0.0 / 1.5
+	    },
+	    energy_usage = "10kW",
+	    ingredient_count = 0,
+	    module_slots = 0
+	},
+
+	{
+		type = "assembling-machine",
 	    name = "underground-drill1",
 	    icon = "__PTech__/graphics/icons/basic-mining-drill1.png",
 	    flags = {"placeable-neutral","placeable-player", "player-creation"},

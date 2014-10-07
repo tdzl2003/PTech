@@ -42,6 +42,20 @@ data:extend{
 	    effects={
 		}
 	},
+	{
+		type = "technology",
+	    name= "mun-orbit-experiment",
+	    prerequisites= {"outer-space-experiment"},
+		icon = "__base__/graphics/technology/rocket-damage.png",
+	    unit=
+	    {
+	      count = 40,
+	      time = 1600,
+	      ingredients= { {"experimental-rocket-4", 1}}
+	    },
+	    effects={
+		}
+	},
 }
 
 -- Technologies

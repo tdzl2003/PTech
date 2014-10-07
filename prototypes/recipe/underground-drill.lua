@@ -2,6 +2,10 @@ data:extend{
 	{
 		type="recipe-category", 
 		name= "underground-drill"
+	},
+	{
+		type="recipe-category", 
+		name= "underground-drill-water"
 	}
 }
 
@@ -52,10 +56,33 @@ data:extend({
 		energy_required = 20,
 		result = "iron-ore"
 	},
+	{
+		type = "recipe",
+		name = "underground-drill-water",
+		category = "underground-drill-water",
+		enabled = false,
+		ingredients = {},
+		energy_required = 1,
+		results = {
+			{type="fluid", name="water", amount=10}
+		}
+	},
 })
 
 -- machines
 data:extend({
+	{
+		type = "recipe",
+	    name = "well",
+		enabled = false,
+	    energy_required = 5,
+	    ingredients =
+	    {
+			{"offshore-pump", 2},
+			{"stone", 20},
+	    },
+	    result = "well"
+	},
 	{
 		type = "recipe",
 	    name = "underground-drill1",
