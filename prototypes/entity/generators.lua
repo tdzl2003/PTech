@@ -23,7 +23,8 @@ data:extend({
             priority = "extra-high",
             width = 90,
             height = 200,
-            shift = {0.3, -2}
+            shift = {0.3, -2},
+            tint = {r=0.9, g=0.6, b=0.5},
         },
 
         charge_cooldown = 10,
@@ -39,7 +40,8 @@ data:extend({
             line_length = 9,
             frame_count = 9,
             shift = {0.3, -2},
-            animation_speed = 0.5
+            animation_speed = 0.5,
+            tint = {r=0.9, g=0.6, b=0.5},
         },
 
         trigger_createdentity = true
@@ -113,7 +115,8 @@ data:extend({
             priority = "extra-high",
             width = 90,
             height = 200,
-            shift = {0.3, -2}
+            shift = {0.3, -2},
+            tint = {r=0.9, g=0.8, b=0.6},
         },
 
         charge_cooldown = 10,
@@ -129,7 +132,8 @@ data:extend({
             line_length = 9,
             frame_count = 9,
             shift = {0.3, -2},
-            animation_speed = 0.5
+            animation_speed = 0.5,
+            tint = {r=0.9, g=0.8, b=0.6},
         },
         trigger_createdentity = true
     },

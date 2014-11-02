@@ -51,7 +51,8 @@ data:extend({
 		      width = 81,
 		      height = 64,
 		      frame_count = 1,
-		      shift = {0.5, 0.05 }
+		      shift = {0.5, 0.05 },
+              tint = {r=0.9, g=0.8, b=0.6},
 	    },
 	    working_visualisations =
 	    {
