@@ -32,6 +32,7 @@ data:extend{
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
+                tint = {r=0.9, g=0.6, b=0.5},
             },
             east =
             {
@@ -44,6 +45,7 @@ data:extend{
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
+                tint = {r=0.9, g=0.6, b=0.5},
             },
             south =
             {
@@ -56,6 +58,7 @@ data:extend{
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
+                tint = {r=0.9, g=0.6, b=0.5},
             },
             west =
             {
@@ -68,6 +71,7 @@ data:extend{
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
+                tint = {r=0.9, g=0.6, b=0.5},
             }
         },
         mining_speed = 0.75,
@@ -123,6 +127,7 @@ data:extend{
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
+                tint = {r=0.9, g=0.8, b=0.6},
             },
             east =
             {
@@ -135,6 +140,7 @@ data:extend{
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
+                tint = {r=0.9, g=0.8, b=0.6},
             },
             south =
             {
@@ -147,6 +153,7 @@ data:extend{
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
+                tint = {r=0.9, g=0.8, b=0.6},
             },
             west =
             {
@@ -159,6 +166,7 @@ data:extend{
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
+                tint = {r=0.9, g=0.8, b=0.6},
             }
         },
         mining_speed = 1.0,
