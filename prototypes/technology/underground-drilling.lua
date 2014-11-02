@@ -15,6 +15,10 @@ data:extend({
 			{
 				type= "unlock-recipe",
 				recipe= "well"
+			},
+			{
+				type="unlock-recipe",
+				recipe="underground-drill-water"
 			}
 		},
 		upgrade = true
