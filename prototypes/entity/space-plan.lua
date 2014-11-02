@@ -13,15 +13,15 @@ data:extend({
 	    on_animation =
 	    {
 	      	filename = "__base__/graphics/entity/rocket-defense/rocket-defense.png",
-	      	frame_width = 160,
-	      	frame_height = 160,
+	      	width = 160,
+	      	height = 160,
 	      	frame_count = 1,
 	    },
 	    off_animation =
 	    {
 	      	filename = "__base__/graphics/entity/rocket-defense/rocket-defense.png",
-	      	frame_width = 160,
-	      	frame_height = 160,
+	      	width = 160,
+	      	height = 160,
 	      	frame_count = 1,
 	    },
 	    energy_source =
@@ -52,8 +52,8 @@ data:extend({
 	    animation =
 	    {
 	      filename = "__base__/graphics/entity/rocket-defense/rocket-defense.png",
-	      frame_width = 160,
-	      frame_height = 160,
+	      width = 160,
+	      height = 160,
 	      frame_count = 1,
 	    },
 	    crafting_categories = {"space-plan"},

@@ -13,8 +13,8 @@ data:extend{
 	    {
 	    	filename = "__base__/graphics/entity/boiler/boiler-down.png",
 	        priority = "extra-high",
-	        frame_width = 66,
-	        frame_height = 72, --shift = {0.05, 0}
+	        width = 66,
+	        height = 72, --shift = {0.05, 0}
 	        line_length = 1,
 	        frame_count = 1
 		},
@@ -45,8 +45,8 @@ data:extend{
 	    	north =
 			{
 				priority = "extra-high",
-				frame_width = 110,
-				frame_height = 76,
+				width = 110,
+				height = 76,
 				line_length = 4,
 				shift = {0.7, -0.1},
 				filename = "__PTech__/graphics/entity/sea-filler/north.png",
@@ -57,8 +57,8 @@ data:extend{
 			east =
 			{
 				priority = "extra-high",
-				frame_width = 94,
-				frame_height = 74,
+				width = 94,
+				height = 74,
 				line_length = 4,
 				shift = {0.45, -0.1},
 				filename = "__PTech__/graphics/entity/sea-filler/east.png",
@@ -69,8 +69,8 @@ data:extend{
 			south =
 			{
 				priority = "extra-high",
-				frame_width = 89,
-				frame_height = 88,
+				width = 89,
+				height = 88,
 				line_length = 4,
 				shift = {0.4, 0},
 				filename = "__PTech__/graphics/entity/sea-filler/south.png",
@@ -81,8 +81,8 @@ data:extend{
 			west =
 			{
 				priority = "extra-high",
-				frame_width = 91,
-				frame_height = 78,
+				width = 91,
+				height = 78,
 				line_length = 4,
 				shift = {0.1, -0.05},
 				filename = "__PTech__/graphics/entity/sea-filler/west.png",

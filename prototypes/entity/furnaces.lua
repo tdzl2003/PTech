@@ -7,21 +7,27 @@ data:extend({
 		minable = {mining_time = 1, result = "electric-furnace-1"},
 		max_health = 150,
 		corpse = "big-remnants",
-		dying_explosion = "huge-explosion",
-		light = {intensity = 1, size = 10},
+	    repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+	    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+	    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+	    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
 		resistances = 
 		{
 			{
 				type = "fire",
 				percent = 80
-			}
+			},
+			{
+		        type = "explosion",
+		        percent = 30
+		    }
 		},
 	    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
 	    selection_box = {{-0.8, -1}, {0.8, 1}},
-		smelting_categories = {"smelting"},
+		crafting_categories = {"smelting"},
 		result_inventory_size = 1,
-		smelting_speed = 0.75,
-		smelting_energy_consumption = "90kW",
+	    crafting_speed = 0.75,
+		energy_usage = "90kW",
 		source_inventory_size = 1,
 		energy_source =
 		{
@@ -38,33 +44,34 @@ data:extend({
 			},
 			apparent_volume = 1.5
 		},
-	    on_animation =
+	    animation =
 	    {
-			filename = "__base__/graphics/entity/stone-furnace/stone-furnace.png",
-			priority = "extra-high",
-			frame_width = 81,
-			frame_height = 64,
-			frame_count = 1,
-			shift = {0.5, 0.05 }
+		      filename = "__base__/graphics/entity/stone-furnace/stone-furnace.png",
+		      priority = "extra-high",
+		      width = 81,
+		      height = 64,
+		      frame_count = 1,
+		      shift = {0.5, 0.05 }
 	    },
-	    off_animation =
+	    working_visualisations =
 	    {
-			filename = "__base__/graphics/entity/stone-furnace/stone-furnace.png",
-			priority = "extra-high",
-			frame_width = 81,
-			frame_height = 64,
-			frame_count = 1,
-			shift = {0.5, 0.05 }
+			{
+				north_position = {0.0, 0.0},
+				east_position = {0.0, 0.0},
+				south_position = {0.0, 0.0},
+				west_position = {0.0, 0.0},
+				animation =
+				{
+					filename = "__base__/graphics/entity/stone-furnace/stone-furnace-fire.png",
+					priority = "extra-high",
+					width = 23,
+					height = 27,
+					frame_count = 12,
+					shift = { 0.078125, 0.5234375}
+				},
+				light = {intensity = 1, size = 1}
+			}
 	    },
-	    fire_animation =
-		{
-			filename = "__base__/graphics/entity/stone-furnace/stone-furnace-fire.png",
-			priority = "extra-high",
-			frame_width = 23,
-			frame_height = 27,
-			frame_count = 12,
-			shift = { 0.078125, 0.5234375}
-		},
 		fast_replaceable_group = "furnace"
 	},
 })

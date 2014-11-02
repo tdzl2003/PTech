@@ -49,8 +49,8 @@ data:extend({
 	    {
 	    	filename = "__base__/graphics/entity/boiler/boiler-down.png",
 	        priority = "extra-high",
-	        frame_width = 66,
-	        frame_height = 72, --shift = {0.05, 0}
+	        width = 66,
+	        height = 72, --shift = {0.05, 0}
 	        line_length = 1,
 	        frame_count = 1
 		},
@@ -83,8 +83,8 @@ data:extend({
 	      north =
 	      {
 	        priority = "extra-high",
-	        frame_width = 110,
-	        frame_height = 114,
+	        width = 110,
+	        height = 114,
 	        line_length = 8,
 	        shift = {0.2, -0.2},
 	        filename = "__PTech__/graphics/entity/underground-drill/north0.png",
@@ -95,8 +95,8 @@ data:extend({
 	      east =
 	      {
 	        priority = "extra-high",
-	        frame_width = 129,
-	        frame_height = 100,
+	        width = 129,
+	        height = 100,
 	        line_length = 8,
 	        shift = {0.45, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/east0.png",
@@ -107,8 +107,8 @@ data:extend({
 	      south =
 	      {
 	        priority = "extra-high",
-	        frame_width = 109,
-	        frame_height = 111,
+	        width = 109,
+	        height = 111,
 	        line_length = 8,
 	        shift = {0.15, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/south0.png",
@@ -119,8 +119,8 @@ data:extend({
 	      west =
 	      {
 	        priority = "extra-high",
-	        frame_width = 128,
-	        frame_height = 100,
+	        width = 128,
+	        height = 100,
 	        line_length = 8,
 	        shift = {0.25, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/west0.png",
@@ -158,8 +158,8 @@ data:extend({
 	      north =
 	      {
 	        priority = "extra-high",
-	        frame_width = 110,
-	        frame_height = 114,
+	        width = 110,
+	        height = 114,
 	        line_length = 8,
 	        shift = {0.2, -0.2},
 	        filename = "__PTech__/graphics/entity/underground-drill/north1.png",
@@ -170,8 +170,8 @@ data:extend({
 	      east =
 	      {
 	        priority = "extra-high",
-	        frame_width = 129,
-	        frame_height = 100,
+	        width = 129,
+	        height = 100,
 	        line_length = 8,
 	        shift = {0.45, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/east1.png",
@@ -182,8 +182,8 @@ data:extend({
 	      south =
 	      {
 	        priority = "extra-high",
-	        frame_width = 109,
-	        frame_height = 111,
+	        width = 109,
+	        height = 111,
 	        line_length = 8,
 	        shift = {0.15, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/south1.png",
@@ -194,8 +194,8 @@ data:extend({
 	      west =
 	      {
 	        priority = "extra-high",
-	        frame_width = 128,
-	        frame_height = 100,
+	        width = 128,
+	        height = 100,
 	        line_length = 8,
 	        shift = {0.25, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/west1.png",
@@ -233,8 +233,8 @@ data:extend({
 	      north =
 	      {
 	        priority = "extra-high",
-	        frame_width = 110,
-	        frame_height = 114,
+	        width = 110,
+	        height = 114,
 	        line_length = 8,
 	        shift = {0.2, -0.2},
 	        filename = "__PTech__/graphics/entity/underground-drill/north2.png",
@@ -245,8 +245,8 @@ data:extend({
 	      east =
 	      {
 	        priority = "extra-high",
-	        frame_width = 129,
-	        frame_height = 100,
+	        width = 129,
+	        height = 100,
 	        line_length = 8,
 	        shift = {0.45, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/east2.png",
@@ -257,8 +257,8 @@ data:extend({
 	      south =
 	      {
 	        priority = "extra-high",
-	        frame_width = 109,
-	        frame_height = 111,
+	        width = 109,
+	        height = 111,
 	        line_length = 8,
 	        shift = {0.15, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/south2.png",
@@ -269,8 +269,8 @@ data:extend({
 	      west =
 	      {
 	        priority = "extra-high",
-	        frame_width = 128,
-	        frame_height = 100,
+	        width = 128,
+	        height = 100,
 	        line_length = 8,
 	        shift = {0.25, 0},
 	        filename = "__PTech__/graphics/entity/underground-drill/west2.png",
@@ -308,8 +308,8 @@ data:extend({
 	--       north =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 110,
-	--         frame_height = 114,
+	--         width = 110,
+	--         height = 114,
 	--         line_length = 8,
 	--         shift = {0.2, -0.2},
 	--         filename = "__PTech__/graphics/entity/underground-drill/north3.png",
@@ -320,8 +320,8 @@ data:extend({
 	--       east =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 129,
-	--         frame_height = 100,
+	--         width = 129,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.45, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/east3.png",
@@ -332,8 +332,8 @@ data:extend({
 	--       south =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 109,
-	--         frame_height = 111,
+	--         width = 109,
+	--         height = 111,
 	--         line_length = 8,
 	--         shift = {0.15, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/south3.png",
@@ -344,8 +344,8 @@ data:extend({
 	--       west =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 128,
-	--         frame_height = 100,
+	--         width = 128,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.25, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/west3.png",
@@ -383,8 +383,8 @@ data:extend({
 	--       north =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 110,
-	--         frame_height = 114,
+	--         width = 110,
+	--         height = 114,
 	--         line_length = 8,
 	--         shift = {0.2, -0.2},
 	--         filename = "__PTech__/graphics/entity/underground-drill/north4.png",
@@ -395,8 +395,8 @@ data:extend({
 	--       east =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 129,
-	--         frame_height = 100,
+	--         width = 129,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.45, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/east4.png",
@@ -407,8 +407,8 @@ data:extend({
 	--       south =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 109,
-	--         frame_height = 111,
+	--         width = 109,
+	--         height = 111,
 	--         line_length = 8,
 	--         shift = {0.15, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/south4.png",
@@ -419,8 +419,8 @@ data:extend({
 	--       west =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 128,
-	--         frame_height = 100,
+	--         width = 128,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.25, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/west4.png",
@@ -458,8 +458,8 @@ data:extend({
 	--       north =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 110,
-	--         frame_height = 114,
+	--         width = 110,
+	--         height = 114,
 	--         line_length = 8,
 	--         shift = {0.2, -0.2},
 	--         filename = "__PTech__/graphics/entity/underground-drill/north5.png",
@@ -470,8 +470,8 @@ data:extend({
 	--       east =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 129,
-	--         frame_height = 100,
+	--         width = 129,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.45, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/east5.png",
@@ -482,8 +482,8 @@ data:extend({
 	--       south =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 109,
-	--         frame_height = 111,
+	--         width = 109,
+	--         height = 111,
 	--         line_length = 8,
 	--         shift = {0.15, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/south5.png",
@@ -494,8 +494,8 @@ data:extend({
 	--       west =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 128,
-	--         frame_height = 100,
+	--         width = 128,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.25, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/west5.png",
@@ -533,8 +533,8 @@ data:extend({
 	--       north =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 110,
-	--         frame_height = 114,
+	--         width = 110,
+	--         height = 114,
 	--         line_length = 8,
 	--         shift = {0.2, -0.2},
 	--         filename = "__PTech__/graphics/entity/underground-drill/north6.png",
@@ -545,8 +545,8 @@ data:extend({
 	--       east =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 129,
-	--         frame_height = 100,
+	--         width = 129,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.45, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/east6.png",
@@ -557,8 +557,8 @@ data:extend({
 	--       south =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 109,
-	--         frame_height = 111,
+	--         width = 109,
+	--         height = 111,
 	--         line_length = 8,
 	--         shift = {0.15, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/south6.png",
@@ -569,8 +569,8 @@ data:extend({
 	--       west =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 128,
-	--         frame_height = 100,
+	--         width = 128,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.25, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/west6.png",
@@ -608,8 +608,8 @@ data:extend({
 	--       north =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 110,
-	--         frame_height = 114,
+	--         width = 110,
+	--         height = 114,
 	--         line_length = 8,
 	--         shift = {0.2, -0.2},
 	--         filename = "__PTech__/graphics/entity/underground-drill/north6.png",
@@ -620,8 +620,8 @@ data:extend({
 	--       east =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 129,
-	--         frame_height = 100,
+	--         width = 129,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.45, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/east6.png",
@@ -632,8 +632,8 @@ data:extend({
 	--       south =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 109,
-	--         frame_height = 111,
+	--         width = 109,
+	--         height = 111,
 	--         line_length = 8,
 	--         shift = {0.15, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/south6.png",
@@ -644,8 +644,8 @@ data:extend({
 	--       west =
 	--       {
 	--         priority = "extra-high",
-	--         frame_width = 128,
-	--         frame_height = 100,
+	--         width = 128,
+	--         height = 100,
 	--         line_length = 8,
 	--         shift = {0.25, 0},
 	--         filename = "__PTech__/graphics/entity/underground-drill/west6.png",

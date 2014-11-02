@@ -30,8 +30,8 @@ data:extend({
 		        animation =
 	    	    {
 					filename = "__PTech__/graphics/entity/greenhouse/greenhouse.png",
-					frame_width = 113,
-					frame_height = 91,
+					width = 113,
+					height = 91,
 					frame_count = 33,
 					line_length = 11,
 					animation_speed = 1 / 3,
@@ -43,8 +43,8 @@ data:extend({
 	    animation =
 	    {
 	      filename = "__PTech__/graphics/entity/greenhouse/greenhouse.png",
-	      frame_width = 113,
-	      frame_height = 91,
+	      width = 113,
+	      height = 91,
 	      frame_count = 1,
 	      shift = {0.2, 0.15}
 	    },
