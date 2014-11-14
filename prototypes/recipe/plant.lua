@@ -22,7 +22,7 @@ data:extend{
 		enabled = false,
 		ingredients = {
 			{"dirt", 50},
-			{"wood", 20},
+			{"wooden-chest", 5},
 			{"stone", 20},
 			{"iron-plate", 10}
 		},
