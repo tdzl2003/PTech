@@ -1,3 +1,6 @@
+data.raw["item"]["wood"].stack_size = 100
+
+
 data:extend({
 	{
 		type = "item",

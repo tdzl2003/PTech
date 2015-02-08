@@ -7,7 +7,7 @@ data:extend{
         subgroup = "energy",
         order = "d-b",
         place_result = "wind-generator",
-        stack_size = 5
+        stack_size = 50
     },
     {
         type = "item",
@@ -17,7 +17,7 @@ data:extend{
         subgroup = "energy",
         order = "d-b",
         place_result = "wind-generator-2",
-        stack_size = 5
+        stack_size = 50
     },
     {
         type = "item",
@@ -27,7 +27,7 @@ data:extend{
         subgroup = "energy",
         order = "d-b",
         place_result = "wind-generator-3",
-        stack_size = 5
+        stack_size = 50
     },
     -- {
     --     type = "item",
