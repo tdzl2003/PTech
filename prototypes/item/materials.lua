@@ -20,4 +20,13 @@ data:extend({
 		order = "h",
 		stack_size = 250
 	},
+	{
+		type = "item",
+		name = "spore",
+		icon = "__PTech__/graphics/icons/small-alien-artifact.png",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "raw-resource",
+		order = "h",
+		stack_size = 1000
+	},
 })

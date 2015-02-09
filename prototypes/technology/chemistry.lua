@@ -56,4 +56,27 @@ data:extend({
 			},
 		}
 	},
+	{
+		type = "technology",
+	    name= "spore-foster",
+	    prerequisites= {"biology"},
+		icon = "__PTech__/graphics/technology/alien-technology.png",
+	    unit=
+	    {
+	      count= 100,
+	      time= 15,
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 2} }
+	    },
+	    effects=
+	    {
+	    	{
+				type= "unlock-recipe",
+				recipe= "spore-foster"
+			},
+			{
+				type= "unlock-recipe",
+				recipe= "alien-foster"
+			},
+		}
+	},
 })

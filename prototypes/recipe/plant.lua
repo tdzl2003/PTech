@@ -44,4 +44,28 @@ data:extend{
 			{type="item", name="raw-wood", amount = 5}
 		}
 	},
+	{
+		type = "recipe",
+		name = "spore-foster",
+		category = "plant",
+		enabled = false,
+		ingredients = {
+			{type="item", name="raw-wood", amount=5},
+			{type="fluid", name="water", amount=1},
+		},
+		energy_required = 10,
+		result = "spore"
+	},
+	{
+		type = "recipe",
+		name = "alien-foster",
+		category = "plant",
+		enabled = false,
+		ingredients = {
+			{type="item", name="spore", amount=100},
+			{type="fluid", name="water", amount=1},
+		},
+		energy_required = 250,
+		result = "alien-artifact"
+	},
 }
