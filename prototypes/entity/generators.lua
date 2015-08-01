@@ -96,7 +96,7 @@ data:extend({
         name = "wind-generator-3",
         icon = "__PTech__/graphics/icons/wind-generator.png",
         flags = {"placeable-neutral", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.5, result = "wind-generator"},
+        minable = {hardness = 0.2, mining_time = 0.5, result = "wind-generator-3"},
         max_health = 100,
         corpse = "medium-remnants",
         collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
