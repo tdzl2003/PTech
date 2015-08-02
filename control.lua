@@ -1,24 +1,24 @@
 require "util"
 require "defines"
 
-game.oninit( 
+game.on_init( 
     function() 
-        glob.staticEnergyGenerators = {} 
-        -- glob.waterdrills = {}
-        -- glob.seafillers= {}
+        global.staticEnergyGenerators = {} 
+        -- global.waterdrills = {}
+        -- global.seafillers= {}
     end
 )
 
-game.onload(
+game.on_load(
     function()
-        if not glob.staticEnergyGenerators then
-            glob.staticEnergyGenerators = {}
+        if not global.staticEnergyGenerators then
+            global.staticEnergyGenerators = {}
         end
-        -- if not glob.waterdrills then
-        --     glob.waterdrills = {}
+        -- if not global.waterdrills then
+        --     global.waterdrills = {}
         -- end
-        -- if not glob.seafillers then
-        --     glob.seafillers = {}
+        -- if not global.seafillers then
+        --     global.seafillers = {}
         -- end
     end
 )
@@ -35,34 +35,34 @@ local isGenerator = {
 
 local function onbuiltentity(event)
     if isGenerator[event.createdentity.name] then
-        table.insert(glob.staticEnergyGenerators, event.createdentity)
+        table.insert(global.staticEnergyGenerators, event.createdentity)
         event.createdentity.energy = 1000000000
     end
     -- if event.createdentity.name == "water-drill" then
-    --     table.insert(glob.waterdrills, event.createdentity)
+    --     table.insert(global.waterdrills, event.createdentity)
     -- end
     -- if event.createdentity.name == "sea-filler" then
-    --     table.insert(glob.seafillers, event.createdentity)
+    --     table.insert(global.seafillers, event.createdentity)
     -- end
 end
 
-game.onevent(
-    defines.events.onbuiltentity,
+game.on_event(
+    defines.events.on_built_entity,
     onbuiltentity
 )
 
-game.onevent(
-    defines.events.onrobotbuiltentity,
+game.on_event(
+    defines.events.on_robot_built_entity,
     onbuiltentity
 )
 
 
-game.onevent(defines.events.ontick, function(event) 
+game.on_event(defines.events.on_tick, function(event) 
 
     -- game start awards.
-    if (not glob.runOncePTech) then
-        glob.runOncePTech = true
-        game.player.removeitem({name="burner-mining-drill", count=1})
+    if (not global.runOncePTech) then
+        global.runOncePTech = true
+        game.player.remove_item({name="burner-mining-drill", count=1})
 
         -- 蛮荒时代
         game.player.insert({name="solar-panel", count=20})
@@ -70,7 +70,7 @@ game.onevent(defines.events.ontick, function(event)
         game.player.insert({name="underground-drill1", count=1})
 
         -- 电力时代
-        game.player.removeitem({name="stone-furnace", count=1})
+        game.player.remove_item({name="stone-furnace", count=1})
         game.player.insert({name="solar-panel", count=20})
         game.player.insert({name="basic-accumulator", count=36})
         game.player.insert({name="underground-drill1", count=5})
@@ -87,9 +87,9 @@ game.onevent(defines.events.ontick, function(event)
 
     -- fill energy generators.
     if (event.tick % 60 == 53) then
-        for index, generator in ipairs(glob.staticEnergyGenerators) do
+        for index, generator in ipairs(global.staticEnergyGenerators) do
             if not generator.valid then 
-                table.remove(glob.staticEnergyGenerators, index)
+                table.remove(global.staticEnergyGenerators, index)
             else
                 generator.energy = 1000000000
             end
@@ -98,9 +98,9 @@ game.onevent(defines.events.ontick, function(event)
 
     -- drill water
     -- if (event.tick % 60 == 29) then
-    --     for index, drill in ipairs(glob.waterdrills) do
+    --     for index, drill in ipairs(global.waterdrills) do
     --         if not drill.valid then
-    --             table.remove(glob.waterdrills, index)
+    --             table.remove(global.waterdrills, index)
     --         else
     --             if drill.recipe ~= nil and drill.recipe.name == "drill-water" then
     --                 if (drill.getitemcount("drill-water") > 0) then
@@ -117,9 +117,9 @@ game.onevent(defines.events.ontick, function(event)
 
     -- fill sea
     -- if (event.tick % 60 == 7) then
-    --     for index, drill in ipairs(glob.seafillers) do
+    --     for index, drill in ipairs(global.seafillers) do
     --         if not drill.valid then
-    --             table.remove(glob.seafillers, index)
+    --             table.remove(global.seafillers, index)
     --         else
     --             if drill.recipe ~= nil and drill.recipe.name == "sea-fill" then
     --                 local x = drill.position.x
