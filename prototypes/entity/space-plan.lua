@@ -2,26 +2,26 @@ data:extend({
 	{
 	    type = "lab",
 	    name = "rocket-experiment-platform",
-	    icon = "__base__/graphics/icons/rocket-defense.png",
+	    icon = "__base__/graphics/icons/rocket-silo.png",
 	    flags = {"placeable-player", "player-creation"},
 	    minable = {mining_time = 1, result = "rocket-experiment-platform"},
 	    max_health = 150,
 	    corpse = "big-remnants",
-	    dying_explosion = "huge-explosion",
+	    dying_explosion = "medium-explosion",
     	collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
     	selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 	    on_animation =
 	    {
-	      	filename = "__base__/graphics/entity/rocket-defense/rocket-defense.png",
-	      	width = 160,
-	      	height = 160,
+	      	filename = "__base__/graphics/entity/rocket-silo/06-silo-base/06-silo-base-night.png",
+	      	width = 352,
+	      	height = 384,
 	      	frame_count = 1,
 	    },
 	    off_animation =
 	    {
-	      	filename = "__base__/graphics/entity/rocket-defense/rocket-defense.png",
-	      	width = 160,
-	      	height = 160,
+	      	filename = "__base__/graphics/entity/rocket-silo/06-silo-base/06-silo-base-day.png",
+	      	width = 352,
+	      	height = 384,
 	      	frame_count = 1,
 	    },
 	    energy_source =
@@ -42,7 +42,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "rocket-launch-platform",
-	    icon = "__base__/graphics/icons/rocket-defense.png",
+	    icon = "__base__/graphics/icons/rocket-silo.png",
 	    flags = {"placeable-player", "player-creation"},
 	    minable = {mining_time = 1, result = "rocket-launch-platform"},
 	    max_health = 5000,
@@ -51,9 +51,9 @@ data:extend({
     	selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 	    animation =
 	    {
-	      filename = "__base__/graphics/entity/rocket-defense/rocket-defense.png",
-	      width = 160,
-	      height = 160,
+	      filename = "__base__/graphics/entity/rocket-silo/06-silo-base/06-silo-base-day.png",
+	      width = 352,
+	      height = 384,
 	      frame_count = 1,
 	    },
 	    crafting_categories = {"space-plan"},

@@ -5,7 +5,7 @@ data:extend{
 	{
 		type = "item-group",
 		name = "space-plan",
-		icon = "__base__/graphics/icons/rocket-defense.png",
+		icon = "__base__/graphics/icons/rocket-silo.png",
 		inventory_order = "g",
 		order = "g"
 	},
@@ -57,7 +57,7 @@ data:extend{
 	{
         type = "item",
         name = "rocket-experiment-platform",
-        icon = "__base__/graphics/icons/rocket-defense.png",
+        icon = "__base__/graphics/icons/rocket-silo.png",
         flags = {"goes-to-quickbar"},
         subgroup = "site-building",
         order = "g-a-a",
@@ -67,7 +67,7 @@ data:extend{
 	{
         type = "item",
         name = "rocket-launch-platform",
-        icon = "__base__/graphics/icons/rocket-defense.png",
+        icon = "__base__/graphics/icons/rocket-silo.png",
         flags = {"goes-to-quickbar"},
         subgroup = "site-building",
         order = "g-a-a",
@@ -174,39 +174,47 @@ data:extend{
 
 	-- rockets
 	{
-		type = "item",
+		type = "tool",
 		name = "experimental-rocket-1",
 		icon = "__base__/graphics/icons/rocket.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
 		order = "g-g-a",
-		stack_size = 5
+		stack_size = 5,
+		durability = 1,
+    	durability_description_key = "description.science-pack-remaining-amount"
 	},
 	{
-		type = "item",
+		type = "tool",
 		name = "experimental-rocket-2",
 		icon = "__base__/graphics/icons/rocket.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
 		order = "g-g-b",
-		stack_size = 5
+		stack_size = 5,
+		durability = 1,
+    	durability_description_key = "description.science-pack-remaining-amount"
 	},
 	{
-		type = "item",
+		type = "tool",
 		name = "experimental-rocket-3",
 		icon = "__base__/graphics/icons/rocket.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
 		order = "g-g-c",
-		stack_size = 5
+		stack_size = 5,
+		durability = 1,
+    	durability_description_key = "description.science-pack-remaining-amount"
 	},
 	{
-		type = "item",
+		type = "tool",
 		name = "experimental-rocket-4",
 		icon = "__base__/graphics/icons/rocket.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "rockets",
 		order = "g-g-c",
-		stack_size = 5
+		stack_size = 5,
+		durability = 1,
+    	durability_description_key = "description.science-pack-remaining-amount"
 	},
 }

@@ -60,21 +60,21 @@ game.onevent(
 game.onevent(defines.events.ontick, function(event) 
 
     -- game start awards.
-    -- if (not glob.runOncePTech) then
-    --     glob.runOncePTech = true
-    --     game.player.removeitem({name="burner-mining-drill", count=1})
+    if (not glob.runOncePTech) then
+        glob.runOncePTech = true
+        game.player.removeitem({name="burner-mining-drill", count=1})
 
         -- 蛮荒时代
-        -- game.player.insert({name="solar-panel", count=2})
-        -- game.player.insert({name="medium-electric-pole", count=20})
-        -- game.player.insert({name="underground-drill1", count=1})
+        game.player.insert({name="solar-panel", count=20})
+        game.player.insert({name="medium-electric-pole", count=50})
+        game.player.insert({name="underground-drill1", count=1})
 
         -- 电力时代
-        -- game.player.removeitem({name="stone-furnace", count=1})
-        -- game.player.insert({name="solar-panel", count=10})
-        -- game.player.insert({name="basic-accumulator", count=9})
-        -- game.player.insert({name="underground-drill1", count=5})
-        -- game.player.insert({name="electric-furnace-1", count=2})
+        game.player.removeitem({name="stone-furnace", count=1})
+        game.player.insert({name="solar-panel", count=20})
+        game.player.insert({name="basic-accumulator", count=36})
+        game.player.insert({name="underground-drill1", count=5})
+        game.player.insert({name="electric-furnace-1", count=2})
 
         -- 机器人时代
         -- game.player.insert({name="logistic-robot", count=20})
@@ -83,7 +83,7 @@ game.onevent(defines.events.ontick, function(event)
         -- game.player.insert({name="logistic-chest-storage", count=4})
         -- game.player.insert({name="logistic-chest-passive-provider", count=20})
         -- game.player.insert({name="logistic-chest-requester", count=20})
-    -- end
+    end
 
     -- fill energy generators.
     if (event.tick % 60 == 53) then
