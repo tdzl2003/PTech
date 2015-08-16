@@ -13,7 +13,7 @@ data:extend({
         {
             type = "electric",
             buffer_capacity = "20kJ",
-            usage_priority = "primary-output",
+            usage_priority = "solar",
             input_flow_limit = "0kW",
             output_flow_limit = "10kW"
         },
@@ -60,7 +60,7 @@ data:extend({
         {
             type = "electric",
             buffer_capacity = "40kJ",
-            usage_priority = "primary-output",
+            usage_priority = "solar",
             input_flow_limit = "0kW",
             output_flow_limit = "20kW"
         },
@@ -105,7 +105,7 @@ data:extend({
         {
             type = "electric",
             buffer_capacity = "60kJ",
-            usage_priority = "primary-output",
+            usage_priority = "solar",
             input_flow_limit = "0kW",
             output_flow_limit = "30kW"
         },

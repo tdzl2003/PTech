@@ -64,7 +64,10 @@ data:extend({
 	    },
 	    energy_usage = "10kW",
 	    ingredient_count = 0,
-	    module_slots = 0
+	    module_specification =
+        {
+            module_slots = 0
+        }
 	},
 
 	{
@@ -139,7 +142,10 @@ data:extend({
 	    },
 	    energy_usage = "20kW",
 	    ingredient_count = 0,
-	    module_slots = 1,
+	    module_specification =
+        {
+            module_slots = 1
+        },
 	    allowed_effects = {"consumption", "speed", "pollution"}
 	},
 	{
@@ -214,7 +220,10 @@ data:extend({
 	    },
 	    energy_usage = "30kW",
 	    ingredient_count = 0,
-	    module_slots = 2,
+	    module_specification =
+        {
+            module_slots = 2
+        },
 	    allowed_effects = {"consumption", "speed", "pollution"}
 	},
 	{
@@ -289,7 +298,10 @@ data:extend({
 	    },
 	    energy_usage = "50kW",
 	    ingredient_count = 0,
-	    module_slots = 3,
+	    module_specification =
+        {
+            module_slots = 3
+        },
 	    allowed_effects = {"consumption", "speed", "pollution"}
 	},
 	-- {

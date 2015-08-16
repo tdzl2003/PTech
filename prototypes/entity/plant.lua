@@ -58,7 +58,10 @@ data:extend({
 	    },
 	    energy_usage = "20kW",
 	    ingredient_count = 2,
-	    module_slots = 1,
+	    module_specification =
+        {
+	    	module_slots = 1
+    	},
 	    allowed_effects = {"consumption", "speed", "pollution"}
 	}
 })

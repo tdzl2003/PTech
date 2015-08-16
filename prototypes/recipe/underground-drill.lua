@@ -119,9 +119,9 @@ data:extend({
 	    ingredients =
 	    {
 	      {"underground-drill2", 2},
-	      {"speed-module", 4},
-	      {"productivity-module", 4},
-	      {"effectivity-module", 4},
+	      {"speed-module", 2},
+	      {"productivity-module", 2},
+	      {"effectivity-module", 2},
 	    },
 	    result = "underground-drill3"
 	},

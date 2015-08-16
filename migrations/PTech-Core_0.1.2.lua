@@ -4,5 +4,5 @@ for index, force in pairs(game.forces) do
 	end
 end
 
-game.player.force.resettechnologies()
-game.player.force.resetrecipes()
+game.player.force.reset_technologies()
+game.player.force.reset_recipes()

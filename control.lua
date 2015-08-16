@@ -34,15 +34,15 @@ local isGenerator = {
 }
 
 local function onbuiltentity(event)
-    if isGenerator[event.createdentity.name] then
-        table.insert(global.staticEnergyGenerators, event.createdentity)
-        event.createdentity.energy = 1000000000
+    if isGenerator[event.created_entity.name] then
+        table.insert(global.staticEnergyGenerators, event.created_entity)
+        event.created_entity.energy = 1000000000
     end
-    -- if event.createdentity.name == "water-drill" then
-    --     table.insert(global.waterdrills, event.createdentity)
+    -- if event.created_entity.name == "water-drill" then
+    --     table.insert(global.waterdrills, event.created_entity)
     -- end
-    -- if event.createdentity.name == "sea-filler" then
-    --     table.insert(global.seafillers, event.createdentity)
+    -- if event.created_entity.name == "sea-filler" then
+    --     table.insert(global.seafillers, event.created_entity)
     -- end
 end
 
