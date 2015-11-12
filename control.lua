@@ -1,7 +1,7 @@
 require "util"
 require "defines"
 
-game.on_init( 
+script.on_init( 
     function() 
         global.staticEnergyGenerators = {} 
         -- global.waterdrills = {}
@@ -9,7 +9,7 @@ game.on_init(
     end
 )
 
-game.on_load(
+script.on_load(
     function()
         if not global.staticEnergyGenerators then
             global.staticEnergyGenerators = {}
@@ -23,9 +23,6 @@ game.on_load(
     end
 )
 
-local function log(d)
-	 game.player.print(d)
-end
 
 local isGenerator = {
     ["wind-generator"] = true,
@@ -46,18 +43,18 @@ local function onbuiltentity(event)
     -- end
 end
 
-game.on_event(
+script.on_event(
     defines.events.on_built_entity,
     onbuiltentity
 )
 
-game.on_event(
+script.on_event(
     defines.events.on_robot_built_entity,
     onbuiltentity
 )
 
 
-game.on_event(defines.events.on_tick, function(event) 
+script.on_event(defines.events.on_tick, function(event) 
 
     -- game start awards.
     if (not global.runOncePTech) then
@@ -77,12 +74,12 @@ game.on_event(defines.events.on_tick, function(event)
         game.player.insert({name="electric-furnace-1", count=2})
 
         -- 机器人时代
-        -- game.player.insert({name="logistic-robot", count=20})
-        -- game.player.insert({name="construction-robot", count=20})
-        -- game.player.insert({name="roboport", count=1})
-        -- game.player.insert({name="logistic-chest-storage", count=4})
-        -- game.player.insert({name="logistic-chest-passive-provider", count=20})
-        -- game.player.insert({name="logistic-chest-requester", count=20})
+        game.player.insert({name="logistic-robot", count=20})
+        game.player.insert({name="construction-robot", count=20})
+        game.player.insert({name="roboport", count=1})
+        game.player.insert({name="logistic-chest-storage", count=4})
+        game.player.insert({name="logistic-chest-passive-provider", count=20})
+        game.player.insert({name="logistic-chest-requester", count=20})
     end
 
     -- fill energy generators.
@@ -95,61 +92,6 @@ game.on_event(defines.events.on_tick, function(event)
             end
         end
     end
-
-    -- drill water
-    -- if (event.tick % 60 == 29) then
-    --     for index, drill in ipairs(global.waterdrills) do
-    --         if not drill.valid then
-    --             table.remove(global.waterdrills, index)
-    --         else
-    --             if drill.recipe ~= nil and drill.recipe.name == "drill-water" then
-    --                 if (drill.getitemcount("drill-water") > 0) then
-    --                     local x = drill.position.x
-    --                     local y = drill.position.y
-    --                     drill.getoutputinventory().clear()
-    --                     drill.destroy()
-    --                     game.settiles({{name="water", position={x, y}}})
-    --                 end
-    --             end
-    --         end
-    --     end
-    -- end
-
-    -- fill sea
-    -- if (event.tick % 60 == 7) then
-    --     for index, drill in ipairs(global.seafillers) do
-    --         if not drill.valid then
-    --             table.remove(global.seafillers, index)
-    --         else
-    --             if drill.recipe ~= nil and drill.recipe.name == "sea-fill" then
-    --                 local x = drill.position.x
-    --                 local y = drill.position.y
-                    
-    --                 if drill.direction == 4 then
-    --                     x, y = x+0.5, y+1.5
-    --                 elseif drill.direction == 6 then
-    --                     x, y = x-1.5, y+0.5
-    --                 elseif drill.direction == 0 then
-    --                     x, y = x-0.5, y-1.5
-    --                 elseif drill.direction == 2 then
-    --                     x, y = x+1.5, y-0.5
-    --                 else
-    --                     log("Invalid direction")
-    --                 end
-                    
-    --                 if (drill.getitemcount("sea-fill") > 0) then
-    --                     drill.getoutputinventory().clear()
-    --                     if game.gettile(x, y).name == "water" then
-    --                         game.settiles({{name="dirt", position={x, y}}})
-    --                     else
-    --                         drill.getinventory(defines.inventory.assemblingmachineinput).insert({name="dirt", count=1000})
-    --                     end
-    --                 end
-                    
-    --             end
-    --         end
-    --     end
-    -- end
 end)
 
 
