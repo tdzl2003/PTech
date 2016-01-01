@@ -56,12 +56,12 @@ data:extend{
 	-- launch platform
 	{
         type = "item",
-        name = "rocket-experiment-platform",
-        icon = "__base__/graphics/icons/rocket-silo.png",
+        name = "nasa",
+        icon = "__base__/graphics/icons/lab.png",
         flags = {"goes-to-quickbar"},
         subgroup = "site-building",
         order = "g-a-a",
-        place_result = "rocket-experiment-platform",
+        place_result = "nasa",
         stack_size = 1
     },
 	{
@@ -70,29 +70,44 @@ data:extend{
         icon = "__base__/graphics/icons/rocket-silo.png",
         flags = {"goes-to-quickbar"},
         subgroup = "site-building",
-        order = "g-a-a",
+        order = "g-a-b",
         place_result = "rocket-launch-platform",
         stack_size = 1
     },
 
 	-- sample data
 	{
-		type = "item",
+		type = "tool",
+		name = "experiment-data",
+		icon = "__base__/graphics/icons/signal/shape_square.png",
+		flags = {"goes-to-main-inventory"},
+		subgroup = "space-science",
+		order = "g-b-a",
+		stack_size = 1000,
+		durability = 1,
+    	durability_description_key = "description.science-pack-remaining-amount"
+	},
+	{
+		type = "tool",
 		name = "surface-sample",
 		icon = "__base__/graphics/icons/small-stone-rock.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "space-science",
 		order = "g-b-b",
-		stack_size = 200
+		stack_size = 1000,
+		durability = 1,
+    	durability_description_key = "description.science-pack-remaining-amount"
 	},
 	{
-		type = "item",
+		type = "tool",
 		name = "organism-sample",
 		icon = "__base__/graphics/icons/brown-fluff-dry.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "space-science",
 		order = "g-b-c",
-		stack_size = 200
+		stack_size = 1000,
+		durability = 1,
+    	durability_description_key = "description.science-pack-remaining-amount"
 	},
 
 	-- booster
@@ -171,50 +186,4 @@ data:extend{
 		stack_size = 50
 	},
 
-
-	-- rockets
-	{
-		type = "tool",
-		name = "experimental-rocket-1",
-		icon = "__base__/graphics/icons/rocket.png",
-		flags = {"goes-to-main-inventory"},
-		subgroup = "rockets",
-		order = "g-g-a",
-		stack_size = 5,
-		durability = 1,
-    	durability_description_key = "description.science-pack-remaining-amount"
-	},
-	{
-		type = "tool",
-		name = "experimental-rocket-2",
-		icon = "__base__/graphics/icons/rocket.png",
-		flags = {"goes-to-main-inventory"},
-		subgroup = "rockets",
-		order = "g-g-b",
-		stack_size = 5,
-		durability = 1,
-    	durability_description_key = "description.science-pack-remaining-amount"
-	},
-	{
-		type = "tool",
-		name = "experimental-rocket-3",
-		icon = "__base__/graphics/icons/rocket.png",
-		flags = {"goes-to-main-inventory"},
-		subgroup = "rockets",
-		order = "g-g-c",
-		stack_size = 5,
-		durability = 1,
-    	durability_description_key = "description.science-pack-remaining-amount"
-	},
-	{
-		type = "tool",
-		name = "experimental-rocket-4",
-		icon = "__base__/graphics/icons/rocket.png",
-		flags = {"goes-to-main-inventory"},
-		subgroup = "rockets",
-		order = "g-g-c",
-		stack_size = 5,
-		durability = 1,
-    	durability_description_key = "description.science-pack-remaining-amount"
-	},
 }

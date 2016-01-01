@@ -7,35 +7,27 @@ data:extend{
 	-- launch platform
 	{
 		type = "recipe",
-		name = "rocket-experiment-platform",
+		name = "nasa",
+		enabled = false,
+		ingredients = {
+			{"steel-plate", 75},
+			{"advanced-circuit", 200},
+			{"processing-unit", 50}
+		},
+		energy_required = 1,
+		result = "nasa"
+	},
+	{
+		type = "recipe",
+		name = "rocket-launch-platform",
 		enabled = false,
 		ingredients = {
 			{"steel-plate", 75},
 			{"stone-brick", 75},
-			{"advanced-circuit", 75}
+			{"advanced-circuit", 25}
 		},
 		energy_required = 15,
-		result = "rocket-experiment-platform"
-	},
-	{
-		type = "recipe",
-		name = "rocket-platform-transform-launch",
-		enabled = false,
-		ingredients = {
-			{"rocket-experiment-platform", 1}
-		},
-		energy_required = 1,
 		result = "rocket-launch-platform"
-	},
-	{
-		type = "recipe",
-		name = "rocket-platform-transform-experimental",
-		enabled = false,
-		ingredients = {
-			{"rocket-launch-platform", 1}
-		},
-		energy_required = 1,
-		result = "rocket-experiment-platform"
 	},
 	
 
@@ -140,20 +132,22 @@ data:extend{
 
 	{
 		type = "recipe",
-		name = "experimental-rocket-1",
+		name = "atmosphere-experiment",
+		icon = "__base__/graphics/icons/rocket.png",
 		enabled = false,
 		ingredients = {
 			{"basic-sensor", 2},
 			{"remote-command-pod", 1},
 			{"solid-fuel-booster", 1}
 		},
-		energy_required = 1,
-		result = "experimental-rocket-1"
+		energy_required = 600,
+		result = "experiment-data"
 	},
 
 	{
 		type = "recipe",
-		name = "experimental-rocket-2",
+		name = "outer-space-experiment",
+		icon = "__base__/graphics/icons/rocket.png",
 		enabled = false,
 		ingredients = {
 			{"basic-sensor", 2},
@@ -161,32 +155,47 @@ data:extend{
 			{"liquid-fuel-engine", 1},
 			{"liquid-fuel-tank", 1}
 		},
-		energy_required = 1,
-		result = "experimental-rocket-2"
+		energy_required = 900,
+		results = {
+			{"experiment-data", 5}
+		}
 	},
 
 	{
 		type = "recipe",
-		name = "experimental-rocket-3",
+		name = "orbit-experiment",
+		icon = "__base__/graphics/icons/rocket.png",
 		enabled = false,
 		ingredients = {
-			{"experimental-rocket-2", 1},
+			{"basic-sensor", 2},
+			{"remote-command-pod", 1},
+			{"liquid-fuel-engine", 1},
+			{"liquid-fuel-tank", 1},
 			{"stack-decoupler", 1},
 			{"solid-fuel-booster", 1}
 		},
-		energy_required = 1,
-		result = "experimental-rocket-3"
+		energy_required = 1200,
+		results = {
+			{"experiment-data", 15}
+		}
 	},
 	{
 		type = "recipe",
-		name = "experimental-rocket-4",
+		name = "mun-orbit-experiment",
+		icon = "__base__/graphics/icons/rocket.png",
 		enabled = false,
 		ingredients = {
-			{"experimental-rocket-3", 1},
-			{"radial-decoupler", 3},
-			{"solid-fuel-booster", 3}
+			{"basic-sensor", 2},
+			{"remote-command-pod", 1},
+			{"liquid-fuel-engine", 1},
+			{"liquid-fuel-tank", 1},
+			{"stack-decoupler", 1},
+			{"solid-fuel-booster", 4},
+			{"radial-decoupler", 3}
 		},
-		energy_required = 1,
-		result = "experimental-rocket-4"
+		energy_required = 1500,
+		results = {
+			{"experiment-data", 30}
+		}
 	},
 }

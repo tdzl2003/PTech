@@ -100,7 +100,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "bionics",
-	    prerequisites= {"biology"},
+	    prerequisites= {"biology", "space-plan-5"},
 		icon="__PTech__/graphics/technology/alien-technology.png",
 	    unit=
 	    {
@@ -115,7 +115,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "particle",
-	    prerequisites= {"thermology", "laser", "outer-space-experiment"},
+	    prerequisites= {"thermology", "laser", "space-plan-2"},
 		icon="__PTech__/graphics/technology/laser.png",
 	    unit=
 	    {
@@ -130,13 +130,13 @@ data:extend({
 	{
 		type = "technology",
 	    name= "restricted-relativity",
-	    prerequisites= {"mechanics", "orbit-experiment"},
+	    prerequisites= {"mechanics", "space-plan-3"},
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
-	      count= 400,
-	      time= 60,
-	      ingredients= { {"science-pack-1", 4}, {"science-pack-2", 4}, {"science-pack-3", 4}}
+	      count= 4000,
+	      time= 0.6,
+	      ingredients= { {"experiment-data", 1} }
 	    },
 	    effects=
 	    {
@@ -145,13 +145,13 @@ data:extend({
 	{
 		type = "technology",
 	    name= "general-relativity",
-	    prerequisites= {"restricted-relativity"},
+	    prerequisites= {"restricted-relativity", "space-plan-5"},
 		icon="__PTech__/graphics/technology/general-science.png",
 	    unit=
 	    {
-	      count= 600,
-	      time= 60,
-	      ingredients= { {"science-pack-1", 4}, {"science-pack-2", 4}, {"science-pack-3", 4}, {"alien-science-pack", 4}}
+	      count= 6000,
+	      time= 0.6,
+	      ingredients= { {"experiment-data", 1} }
 	    },
 	    effects=
 	    {
@@ -160,7 +160,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "command-system",
-	    prerequisites= {"particle"},
+	    prerequisites= {"particle", "space-plan-3"},
 		icon="__PTech__/graphics/technology/command-system.png",
 	    unit=
 	    {
@@ -175,7 +175,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "worm-hole",
-	    prerequisites= {"general-relativity", "command-system", "bionics"},
+	    prerequisites= {"general-relativity", "command-system", "bionics", "space-plan-5"},
 		icon="__PTech__/graphics/technology/alien-technology.png",
 	    unit=
 	    {
@@ -190,7 +190,7 @@ data:extend({
 	{
 		type = "technology",
 	    name= "space-science",
-	    prerequisites= {"worm-hole"},
+	    prerequisites= {"worm-hole", "space-plan-5"},
 		icon="__PTech__/graphics/technology/space.png",
 	    unit=
 	    {

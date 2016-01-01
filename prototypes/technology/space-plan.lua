@@ -1,63 +1,3 @@
--- Space plan
-data:extend{
-	{
-		type = "technology",
-	    name= "atmosphere-experiment",
-	    prerequisites= {"space-plan"},
-		icon = "__base__/graphics/technology/rocket-damage.png",
-	    unit=
-	    {
-	      count= 10,
-	      time= 600,
-	      ingredients= { {"experimental-rocket-1", 1}}
-	    },
-	    effects={
-		}
-	},
-	{
-		type = "technology",
-	    name= "outer-space-experiment",
-	    prerequisites= {"atmosphere-experiment"},
-		icon = "__base__/graphics/technology/rocket-damage.png",
-	    unit=
-	    {
-	      count = 20,
-	      time = 900,
-	      ingredients= { {"experimental-rocket-2", 1}}
-	    },
-	    effects={
-		}
-	},
-	{
-		type = "technology",
-	    name= "orbit-experiment",
-	    prerequisites= {"outer-space-experiment"},
-		icon = "__base__/graphics/technology/rocket-damage.png",
-	    unit=
-	    {
-	      count = 40,
-	      time = 1200,
-	      ingredients= { {"experimental-rocket-3", 1}}
-	    },
-	    effects={
-		}
-	},
-	{
-		type = "technology",
-	    name= "mun-orbit-experiment",
-	    prerequisites= {"outer-space-experiment"},
-		icon = "__base__/graphics/technology/rocket-damage.png",
-	    unit=
-	    {
-	      count = 40,
-	      time = 1600,
-	      ingredients= { {"experimental-rocket-4", 1}}
-	    },
-	    effects={
-		}
-	},
-}
-
 -- Technologies
 data:extend{
 	{
@@ -87,18 +27,70 @@ data:extend{
 			},
 			{
 				type= "unlock-recipe",
-				recipe= "experimental-rocket-1"
+				recipe= "atmosphere-experiment"
 			},
 			{
 				type= "unlock-recipe",
-				recipe= "rocket-experiment-platform"
+				recipe= "nasa"
+			},
+			{
+				type= "unlock-recipe",
+				recipe= "rocket-launch-platform"
 			},
 		}
 	},
 	{
 		type = "technology",
+		name = "space-plan-2",
+		prerequisites = {"space-plan"},
+		icon = "__base__/graphics/technology/rocket-travel.png",
+		unit = {
+			count = 10,
+			time = 0.1,
+			ingredients= { {"experiment-data", 1} }
+		},
+		upgrade = true
+	},
+	{
+		type = "technology",
+		name = "space-plan-3",
+		prerequisites = {"space-plan"},
+		icon = "__base__/graphics/technology/rocket-travel.png",
+		unit = {
+			count = 100,
+			time = 0.1,
+			ingredients= { {"experiment-data", 1} }
+		},
+		upgrade = true
+	},
+	{
+		type = "technology",
+		name = "space-plan-4",
+		prerequisites = {"space-plan"},
+		icon = "__base__/graphics/technology/rocket-travel.png",
+		unit = {
+			count = 1000,
+			time = 0.1,
+			ingredients= { {"experiment-data", 1} }
+		},
+		upgrade = true
+	},
+	{
+		type = "technology",
+		name = "space-plan-5",
+		prerequisites = {"space-plan"},
+		icon = "__base__/graphics/technology/rocket-travel.png",
+		unit = {
+			count = 5000,
+			time = 0.1,
+			ingredients= { {"experiment-data", 1} }
+		},
+		upgrade = true
+	},
+	{
+		type = "technology",
 	    name= "fluid-fuel",
-	    prerequisites= {"atmosphere-experiment", "thermology"},
+	    prerequisites= {"thermology", "space-plan-2"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
@@ -126,14 +118,14 @@ data:extend{
 			},
 			{
 				type= "unlock-recipe",
-				recipe= "experimental-rocket-2"
+				recipe= "outer-space-experiment"
 			},
 		}
 	},
 	{
 		type = "technology",
 	    name= "aircraft-structure",
-	    prerequisites= {"fluid-fuel", "outer-space-experiment"},
+	    prerequisites= {"fluid-fuel", "space-plan-3"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
@@ -149,14 +141,14 @@ data:extend{
 			},
 			{
 				type= "unlock-recipe",
-				recipe= "experimental-rocket-3"
+				recipe= "orbit-experiment"
 			},
 		}
 	},
 	{
 		type = "technology",
 	    name= "aircraft-structure-2",
-	    prerequisites= {"fluid-fuel", "outer-space-experiment"},
+	    prerequisites= {"aircraft-structure", "space-plan-4"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
@@ -172,14 +164,15 @@ data:extend{
 			},
 			{
 				type= "unlock-recipe",
-				recipe= "experimental-rocket-4"
+				recipe= "mun-orbit-experiment"
 			},
-		}
+		},
+		upgrade= true
 	},
 	{
 		type = "technology",
 	    name= "aircraft-stability",
-	    prerequisites= {"aircraft-structure", "orbit-experiment"},
+	    prerequisites= {"aircraft-structure", "space-plan-5"},
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {

@@ -1,28 +1,41 @@
 data:extend({
 	{
 	    type = "lab",
-	    name = "rocket-experiment-platform",
-	    icon = "__base__/graphics/icons/rocket-silo.png",
+	    name = "nasa",
+	    icon = "__base__/graphics/icons/lab.png",
 	    flags = {"placeable-player", "player-creation"},
-	    minable = {mining_time = 1, result = "rocket-experiment-platform"},
+	    minable = {mining_time = 1, result = "nasa"},
 	    max_health = 150,
 	    corpse = "big-remnants",
 	    dying_explosion = "medium-explosion",
-    	collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
-    	selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+    	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	    on_animation =
 	    {
-	      	filename = "__base__/graphics/entity/rocket-silo/06-silo-base/06-silo-base-night.png",
-	      	width = 352,
-	      	height = 384,
-	      	frame_count = 1,
+	      filename = "__base__/graphics/entity/lab/lab.png",
+	      width = 113,
+	      height = 91,
+	      frame_count = 33,
+	      line_length = 11,
+	      animation_speed = 1 / 3,
+	      shift = {0.2, 0.15}
 	    },
 	    off_animation =
 	    {
-	      	filename = "__base__/graphics/entity/rocket-silo/06-silo-base/06-silo-base-day.png",
-	      	width = 352,
-	      	height = 384,
-	      	frame_count = 1,
+	      filename = "__base__/graphics/entity/lab/lab.png",
+	      width = 113,
+	      height = 91,
+	      frame_count = 1,
+	      shift = {0.2, 0.15}
+	    },
+	    working_sound =
+	    {
+	      sound =
+	      {
+	        filename = "__base__/sound/lab.ogg",
+	        volume = 0.7
+	      },
+	      apparent_volume = 1
 	    },
 	    energy_source =
 	    {
@@ -32,12 +45,17 @@ data:extend({
 	    energy_usage = "60kW",
 	    inputs =
 	    {
-	        "experimental-rocket-1",
-		    "experimental-rocket-2",
-		    "experimental-rocket-3",
-		    "experimental-rocket-4",
+	        "experiment-data",
+		    "surface-sample",
+		    "organism-sample",
 	    },
-	    module_slots = 0
+	    module_specification =
+	    {
+	      module_slots = 3,
+	      max_entity_info_module_icons_per_row = 3,
+	      max_entity_info_module_icon_rows = 1,
+	      module_info_icon_shift = {0, 0.9}
+	    }
   	},
 	{
 		type = "assembling-machine",
@@ -47,8 +65,8 @@ data:extend({
 	    minable = {mining_time = 1, result = "rocket-launch-platform"},
 	    max_health = 5000,
 	    corpse = "big-remnants",
-    	collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
-    	selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    	collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
+    	selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
 	    animation =
 	    {
 	      filename = "__base__/graphics/entity/rocket-silo/06-silo-base/06-silo-base-day.png",
@@ -65,7 +83,7 @@ data:extend({
 	      emissions = 0
 	    },
 	    energy_usage = "960kW",
-	    ingredient_count = 1,
+	    ingredient_count = 10,
 	    module_slots = 1,
 	    allowed_effects = {"consumption", "speed", "pollution"}
 	}
