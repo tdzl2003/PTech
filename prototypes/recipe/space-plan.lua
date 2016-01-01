@@ -134,6 +134,7 @@ data:extend{
 		type = "recipe",
 		name = "atmosphere-experiment",
 		icon = "__base__/graphics/icons/rocket.png",
+		category = "space-plan",
 		enabled = false,
 		ingredients = {
 			{"basic-sensor", 2},
@@ -148,6 +149,7 @@ data:extend{
 		type = "recipe",
 		name = "outer-space-experiment",
 		icon = "__base__/graphics/icons/rocket.png",
+		category = "space-plan",
 		enabled = false,
 		ingredients = {
 			{"basic-sensor", 2},
@@ -165,6 +167,7 @@ data:extend{
 		type = "recipe",
 		name = "orbit-experiment",
 		icon = "__base__/graphics/icons/rocket.png",
+		category = "space-plan",
 		enabled = false,
 		ingredients = {
 			{"basic-sensor", 2},
@@ -183,6 +186,7 @@ data:extend{
 		type = "recipe",
 		name = "mun-orbit-experiment",
 		icon = "__base__/graphics/icons/rocket.png",
+		category = "space-plan",
 		enabled = false,
 		ingredients = {
 			{"basic-sensor", 2},

@@ -54,7 +54,7 @@ data:extend{
 	{
 		type = "technology",
 		name = "space-plan-3",
-		prerequisites = {"space-plan"},
+		prerequisites = {"space-plan-2"},
 		icon = "__base__/graphics/technology/rocket-travel.png",
 		unit = {
 			count = 100,
@@ -66,7 +66,7 @@ data:extend{
 	{
 		type = "technology",
 		name = "space-plan-4",
-		prerequisites = {"space-plan"},
+		prerequisites = {"space-plan-3"},
 		icon = "__base__/graphics/technology/rocket-travel.png",
 		unit = {
 			count = 1000,
@@ -78,7 +78,7 @@ data:extend{
 	{
 		type = "technology",
 		name = "space-plan-5",
-		prerequisites = {"space-plan"},
+		prerequisites = {"space-plan-4"},
 		icon = "__base__/graphics/technology/rocket-travel.png",
 		unit = {
 			count = 5000,
