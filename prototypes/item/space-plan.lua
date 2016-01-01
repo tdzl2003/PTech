@@ -41,15 +41,21 @@ data:extend{
 	},
 	{
 		type = "item-subgroup",
-		name = "rocket-structure",
+		name = "space-buildings",
 		group = "space-plan",
 		order = "f"
 	},
 	{
 		type = "item-subgroup",
-		name = "rockets",
+		name = "rocket-structure",
 		group = "space-plan",
 		order = "g"
+	},
+	{
+		type = "item-subgroup",
+		name = "rockets",
+		group = "space-plan",
+		order = "h"
 	},
 
 
