@@ -14,7 +14,7 @@ data:extend{
 			{"advanced-circuit", 200},
 			{"processing-unit", 50}
 		},
-		energy_required = 1,
+		energy_required = 30,
 		result = "nasa"
 	},
 	{
@@ -26,7 +26,7 @@ data:extend{
 			{"stone-brick", 75},
 			{"advanced-circuit", 25}
 		},
-		energy_required = 15,
+		energy_required = 45,
 		result = "rocket-launch-platform"
 	},
 	
