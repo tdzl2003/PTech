@@ -112,7 +112,7 @@ data:extend{
 			{"iron-gear-wheel", 2},
 			{"electronic-circuit", 5}
 		},
-		energy_required = 20,
+		energy_required = 5,
 		result = "stack-decoupler"
 	},
 
@@ -126,7 +126,7 @@ data:extend{
 			{"iron-gear-wheel", 4},
 			{"electronic-circuit", 5}
 		},
-		energy_required = 20,
+		energy_required = 5,
 		result = "radial-decoupler"
 	},
 

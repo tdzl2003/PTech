@@ -66,4 +66,27 @@ data:extend{
 			},
 		}
 	},
+	{
+		type = "technology",
+		name = "carbon-accumulator",
+		prerequisites = { "space-plan-4" },
+		icon = "__base__/graphics/icons/basic-accumulator.png",
+		unit = {
+			count= 1800,
+	      	time= 20,
+	      	ingredients = {
+				{"alien-science-pack", 1},
+				{"science-pack-1", 1},
+				{"science-pack-2", 1},
+				{"science-pack-3", 1}
+			},
+		},
+		effects=
+	    {
+			{
+				type= "unlock-recipe",
+				recipe= "carbon-accumulator"
+			},
+		}
+	}
 }

@@ -82,7 +82,7 @@ data:extend({
 	      usage_priority = "secondary-input",
 	      emissions = 0
 	    },
-	    energy_usage = "960kW",
+	    energy_usage = "96kW",
 	    ingredient_count = 10,
 	    module_slots = 1,
 	    allowed_effects = {"consumption", "speed", "pollution"}

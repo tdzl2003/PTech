@@ -48,5 +48,14 @@ data:extend{
         place_result = "solar-satellite-base",
         stack_size = 50
     },
-    
+    {
+        type = "item",
+        name = "carbon-accumulator",
+        icon = "__base__/graphics/icons/basic-accumulator.png",
+        flags = {"goes-to-quickbar"},
+        subgroup = "energy",
+        order = "e[accumulator]-a[basic-accumulator]-a",
+        place_result = "carbon-accumulator",
+        stack_size = 50
+    },    
 }

@@ -53,7 +53,6 @@ data:extend({
 		category = "space-plan",
 		enabled = false,
 		ingredients = {
-			{"basic-sensor", 2},
 			{"remote-command-pod", 1},
 			{"liquid-fuel-engine", 1},
 			{"liquid-fuel-tank", 1},
@@ -63,5 +62,17 @@ data:extend({
 		},
 		energy_required = 150,
 		result = "solar-satellite-base"
+	},
+	{
+		type = "recipe",
+		name = "carbon-accumulator",
+		enabled = false,
+		ingredients = {
+			{"basic-accumulator", 5},
+			{"coal", 5},
+			{"steel-plate", 20},
+		},
+		energy_required = 200,
+		result = "solar-satellite"
 	},
 })
