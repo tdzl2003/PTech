@@ -161,7 +161,7 @@ data:extend({
             height = 96,
             tint = {r=0.9, g=0.6, b=0.5},
         },
-        production = "600kW"
+        production = "1800kW"
     },
     {
         type = "accumulator",
@@ -198,7 +198,8 @@ data:extend({
             line_length = 8,
             frame_count = 24,
             shift = {0.482, -0.638},
-            animation_speed = 0.5
+            animation_speed = 0.5,
+            tint = {r=0.9, g=0.6, b=0.5},
         },
         charge_cooldown = 30,
         charge_light = {intensity = 0.3, size = 7},
@@ -210,7 +211,8 @@ data:extend({
             line_length = 8,
             frame_count = 24,
             shift = {0.395, -0.525},
-            animation_speed = 0.5
+            animation_speed = 0.5,
+            tint = {r=0.9, g=0.6, b=0.5},
         },
         discharge_cooldown = 60,
         discharge_light = {intensity = 0.7, size = 7},
