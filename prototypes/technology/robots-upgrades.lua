@@ -40,7 +40,7 @@ data:extend{
 	        "logistic-robot-speed-6"
 	    },
 	    unit = {
-			count = 1000,
+			count = 1400,
 			ingredients = {
 				{"alien-science-pack", 1},
 				{"science-pack-1", 1},
@@ -67,7 +67,7 @@ data:extend{
 			"restricted-relativity"
 		},
 		unit = {
-			count = 700,
+			count = 1000,
 			ingredients = {
 				{"alien-science-pack", 1},
 				{"science-pack-1", 1},

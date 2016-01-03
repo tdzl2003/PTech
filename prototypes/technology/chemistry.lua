@@ -44,7 +44,7 @@ data:extend({
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	      count= 50,
+	      count= 400,
 	      time= 15,
 	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1} }
 	    },
@@ -63,8 +63,8 @@ data:extend({
 		icon = "__PTech__/graphics/technology/alien-technology.png",
 	    unit=
 	    {
-	      count= 100,
-	      time= 15,
+	      count= 1000,
+	      time= 20,
 	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 2} }
 	    },
 	    effects=

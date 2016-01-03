@@ -60,7 +60,6 @@ data:extend({
 		type = "recipe",
 		name = "underground-drill-water",
 		category = "underground-drill-water",
-		enabled = false,
 		ingredients = {},
 		energy_required = 1,
 		results = {

@@ -73,6 +73,6 @@ data:extend({
 			{"steel-plate", 20},
 		},
 		energy_required = 200,
-		result = "solar-satellite"
+		result = "carbon-accumulator"
 	},
 })

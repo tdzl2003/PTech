@@ -6,7 +6,7 @@ data:extend({
 		icon="__PTech__/graphics/technology/icons/miner.png",
 	    unit=
 	    {
-	      count= 50,
+	      count= 100,
 	      time= 20,
 	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
 	    },
@@ -32,7 +32,7 @@ data:extend({
 		icon="__PTech__/graphics/technology/icons/miner.png",
 	    unit=
 	    {
-	      count= 100,
+	      count= 200,
 	      time= 20,
 	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
 	    },
@@ -53,9 +53,9 @@ data:extend({
 		icon="__PTech__/graphics/technology/icons/miner.png",
 	    unit=
 	    {
-	      count= 200,
+	      count= 750,
 	      time= 25,
-	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}}
+	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },
 	    effects=
 	    {

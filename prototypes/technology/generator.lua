@@ -45,7 +45,7 @@ data:extend{
 		prerequisites= {"advanced-electronics", "space-plan-3"},
 		icon = "__PTech__/graphics/icons/satellite.png",
 		unit = {
-			count= 1200,
+			count= 2500,
 	      	time= 20,
 	      	ingredients = {
 				{"alien-science-pack", 1},
@@ -72,7 +72,7 @@ data:extend{
 		prerequisites = { "space-plan-4" },
 		icon = "__base__/graphics/icons/basic-accumulator.png",
 		unit = {
-			count= 1800,
+			count= 4000,
 	      	time= 20,
 	      	ingredients = {
 				{"alien-science-pack", 1},

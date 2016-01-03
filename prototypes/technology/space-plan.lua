@@ -7,7 +7,7 @@ data:extend{
 		icon = "__base__/graphics/technology/rocket-travel.png",
 	    unit=
 	    {
-	      count= 100,
+	      count= 300,
 	      time= 15,
 	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },
@@ -94,7 +94,7 @@ data:extend{
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	      count= 100,
+	      count= 500,
 	      time= 15,
 	      ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },
@@ -129,7 +129,7 @@ data:extend{
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	        count= 150,
+	        count= 750,
 	        time= 15,
 	        ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },
@@ -152,7 +152,7 @@ data:extend{
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	        count= 300,
+	        count= 1000,
 	        time= 15,
 	        ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },
@@ -176,7 +176,7 @@ data:extend{
 		icon = "__base__/graphics/technology/rocket-damage.png",
 	    unit=
 	    {
-	        count= 150,
+	        count= 1500,
 	        time= 15,
 	        ingredients= { {"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}
 	    },
