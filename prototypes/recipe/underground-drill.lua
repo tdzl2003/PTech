@@ -61,7 +61,7 @@ data:extend({
 		name = "underground-drill-water",
 		category = "underground-drill-water",
 		ingredients = {},
-		energy_required = 1,
+		energy_required = 0.1,
 		results = {
 			{type="fluid", name="water", amount=10}
 		}
