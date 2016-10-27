@@ -65,10 +65,13 @@ data:extend({
 				{
 					filename = "__base__/graphics/entity/stone-furnace/stone-furnace-fire.png",
 					priority = "extra-high",
-					width = 23,
-					height = 27,
-					frame_count = 12,
-					shift = { 0.078125, 0.5234375}
+					line_length = 8,
+					width = 22,
+			        height = 87,
+			        frame_count = 48,
+			        axially_symmetrical = false,
+          			direction_count = 1,
+					shift = {0.0625, -0.453125},
 				},
 				light = {intensity = 1, size = 1}
 			}

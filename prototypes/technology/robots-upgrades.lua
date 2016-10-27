@@ -1,16 +1,16 @@
 data:extend{
 	{
 	    type = "technology",
-	    name = "logistic-robot-speed-6",
-	    icon = "__base__/graphics/technology/logistic-robot-speed.png",
+	    name = "worker-robots-speed-6",
+	    icon = "__base__/graphics/technology/worker-robots-speed.png",
 	    effects = {
 			{
-				type = "logistic-robot-speed",
+				type = "worker-robot-speed",
 				modifier = "0.85"
 			}
 	    },
 	    prerequisites = {
-	        "logistic-robot-speed-5",
+	        "worker-robots-speed-5",
 	        "restricted-relativity"
 	    },
 	    unit = {
@@ -28,16 +28,16 @@ data:extend{
   	},
   	{
 	    type = "technology",
-	    name = "logistic-robot-speed-7",
-	    icon = "__base__/graphics/technology/logistic-robot-speed.png",
+	    name = "worker-robots-speed-7",
+	    icon = "__base__/graphics/technology/worker-robots-speed.png",
 	    effects = {
 			{
-				type = "logistic-robot-speed",
+				type = "worker-robot-speed",
 				modifier = "1.1"
 			}
 	    },
 	    prerequisites = {
-	        "logistic-robot-speed-6"
+	        "worker-robots-speed-6"
 	    },
 	    unit = {
 			count = 1400,
@@ -54,16 +54,16 @@ data:extend{
   	},
   	{
 		type = "technology",
-		name = "logistic-robot-storage-4",
-		icon = "__base__/graphics/technology/logistic-robot-storage.png",
+		name = "worker-robots-storage-4",
+		icon = "__base__/graphics/technology/worker-robots-storage.png",
 		effects = {
 			{
-				type = "logistic-robot-storage",
+				type = "worker-robot-storage",
 				modifier = "1"
 			}
 		},
 		prerequisites = {
-			"logistic-robot-storage-3",
+			"worker-robots-storage-3",
 			"restricted-relativity"
 		},
 		unit = {

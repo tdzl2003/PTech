@@ -4,7 +4,7 @@ data:extend{
 		type = "technology",
 	    name= "space-plan",
 	    prerequisites= {"rocketry", "mechanics"},
-		icon = "__base__/graphics/technology/rocket-travel.png",
+		icon = "__base__/graphics/technology/rocket-silo.png",
 	    unit=
 	    {
 	      count= 300,
@@ -43,7 +43,7 @@ data:extend{
 		type = "technology",
 		name = "space-plan-2",
 		prerequisites = {"space-plan"},
-		icon = "__base__/graphics/technology/rocket-travel.png",
+		icon = "__base__/graphics/technology/rocket-silo.png",
 		unit = {
 			count = 10,
 			time = 0.1,
@@ -55,7 +55,7 @@ data:extend{
 		type = "technology",
 		name = "space-plan-3",
 		prerequisites = {"space-plan-2"},
-		icon = "__base__/graphics/technology/rocket-travel.png",
+		icon = "__base__/graphics/technology/rocket-silo.png",
 		unit = {
 			count = 100,
 			time = 0.1,
@@ -67,7 +67,7 @@ data:extend{
 		type = "technology",
 		name = "space-plan-4",
 		prerequisites = {"space-plan-3"},
-		icon = "__base__/graphics/technology/rocket-travel.png",
+		icon = "__base__/graphics/technology/rocket-silo.png",
 		unit = {
 			count = 1000,
 			time = 0.1,
@@ -79,7 +79,7 @@ data:extend{
 		type = "technology",
 		name = "space-plan-5",
 		prerequisites = {"space-plan-4"},
-		icon = "__base__/graphics/technology/rocket-travel.png",
+		icon = "__base__/graphics/technology/rocket-silo.png",
 		unit = {
 			count = 5000,
 			time = 0.1,

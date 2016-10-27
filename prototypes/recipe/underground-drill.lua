@@ -89,7 +89,7 @@ data:extend({
 	    energy_required = 5,
 	    ingredients =
 	    {
-	      {"basic-mining-drill", 2},
+	      {"electric-mining-drill", 2},
 	      {"electronic-circuit", 1},
 	      {"iron-gear-wheel", 1},
 	      {"stone", 5}

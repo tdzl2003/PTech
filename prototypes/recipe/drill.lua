@@ -4,7 +4,7 @@ data:extend{
 		name = "advanced-mining-drill",
 		enabled = false,
 		ingredients = {
-			{"basic-mining-drill", 2},
+			{"electric-mining-drill", 2},
 			{"steel-plate", 5},
 			{"electronic-circuit", 5},
 		},

@@ -2,7 +2,7 @@ data:extend{
     {
         type = "mining-drill",
         name = "advanced-mining-drill",
-        icon = "__base__/graphics/icons/basic-mining-drill.png",
+        icon = "__base__/graphics/icons/electric-mining-drill.png",
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 1, result = "advanced-mining-drill"},
         max_health = 300,
@@ -28,7 +28,7 @@ data:extend{
                 height = 114,
                 line_length = 8,
                 shift = {0.2, -0.2},
-                filename = "__base__/graphics/entity/basic-mining-drill/north.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/north.png",
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
@@ -41,7 +41,7 @@ data:extend{
                 height = 100,
                 line_length = 8,
                 shift = {0.45, 0},
-                filename = "__base__/graphics/entity/basic-mining-drill/east.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/east.png",
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
@@ -54,7 +54,7 @@ data:extend{
                 height = 111,
                 line_length = 8,
                 shift = {0.15, 0},
-                filename = "__base__/graphics/entity/basic-mining-drill/south.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/south.png",
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
@@ -67,7 +67,7 @@ data:extend{
                 height = 100,
                 line_length = 8,
                 shift = {0.25, 0},
-                filename = "__base__/graphics/entity/basic-mining-drill/west.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/west.png",
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
@@ -92,7 +92,7 @@ data:extend{
         },
         radius_visualisation_picture =
         {
-            filename = "__base__/graphics/entity/basic-mining-drill/mining-drill-radius-visualization.png",
+            filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
             width = 12,
             height = 12
         }
@@ -100,7 +100,7 @@ data:extend{
     {
         type = "mining-drill",
         name = "high-advanced-mining-drill",
-        icon = "__base__/graphics/icons/basic-mining-drill.png",
+        icon = "__base__/graphics/icons/electric-mining-drill.png",
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 1, result = "high-advanced-mining-drill"},
         max_health = 300,
@@ -126,7 +126,7 @@ data:extend{
                 height = 114,
                 line_length = 8,
                 shift = {0.2, -0.2},
-                filename = "__base__/graphics/entity/basic-mining-drill/north.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/north.png",
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
@@ -139,7 +139,7 @@ data:extend{
                 height = 100,
                 line_length = 8,
                 shift = {0.45, 0},
-                filename = "__base__/graphics/entity/basic-mining-drill/east.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/east.png",
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
@@ -152,7 +152,7 @@ data:extend{
                 height = 111,
                 line_length = 8,
                 shift = {0.15, 0},
-                filename = "__base__/graphics/entity/basic-mining-drill/south.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/south.png",
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
@@ -165,7 +165,7 @@ data:extend{
                 height = 100,
                 line_length = 8,
                 shift = {0.25, 0},
-                filename = "__base__/graphics/entity/basic-mining-drill/west.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/west.png",
                 frame_count = 64,
                 animation_speed = 0.5,
                 run_mode = "forward-then-backward",
@@ -190,7 +190,7 @@ data:extend{
         },
         radius_visualisation_picture =
         {
-            filename = "__base__/graphics/entity/basic-mining-drill/mining-drill-radius-visualization.png",
+            filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
             width = 12,
             height = 12
         }

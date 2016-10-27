@@ -1,36 +1,6 @@
 data:extend{
     {
         type = "item",
-        name = "wind-generator",
-        icon = "__PTech__/graphics/icons/wind-generator.png",
-        flags = {"goes-to-quickbar"},
-        subgroup = "energy",
-        order = "d-b",
-        place_result = "wind-generator",
-        stack_size = 50
-    },
-    {
-        type = "item",
-        name = "wind-generator-2",
-        icon = "__PTech__/graphics/icons/wind-generator.png",
-        flags = {"goes-to-quickbar"},
-        subgroup = "energy",
-        order = "d-b",
-        place_result = "wind-generator-2",
-        stack_size = 50
-    },
-    {
-        type = "item",
-        name = "wind-generator-3",
-        icon = "__PTech__/graphics/icons/wind-generator.png",
-        flags = {"goes-to-quickbar"},
-        subgroup = "energy",
-        order = "d-b",
-        place_result = "wind-generator-3",
-        stack_size = 50
-    },
-    {
-        type = "item",
         name = "solar-satellite",
         icon = "__PTech__/graphics/icons/satellite.png",
         flags = {"goes-to-quickbar"},
@@ -51,10 +21,10 @@ data:extend{
     {
         type = "item",
         name = "carbon-accumulator",
-        icon = "__base__/graphics/icons/basic-accumulator.png",
+        icon = "__base__/graphics/icons/accumulator.png",
         flags = {"goes-to-quickbar"},
         subgroup = "energy",
-        order = "e[accumulator]-a[basic-accumulator]-a",
+        order = "e[accumulator]-a[accumulator]-a",
         place_result = "carbon-accumulator",
         stack_size = 50
     },    
