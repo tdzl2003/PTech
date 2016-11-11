@@ -59,7 +59,7 @@ data:extend({
 		energy_source =
 	    {
 	      type = "electric",
-	      usage_priority = "secondary-input",
+	      usage_priority = "primary-input",
 	      emissions = 0.0 / 1.5
 	    },
 	    energy_usage = "10kW",
