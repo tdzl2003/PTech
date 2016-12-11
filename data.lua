@@ -9,6 +9,7 @@ require("prototypes.item.plant")
 require("prototypes.item.topography-reform")
 require("prototypes.item.fluid")
 require("prototypes.item.space-plan")
+require("prototypes.item.weapon")
 
 -- Entity
 require("prototypes.entity.drill")
@@ -18,6 +19,7 @@ require("prototypes.entity.underground-drill")
 require("prototypes.entity.plant")
 require("prototypes.entity.topography-reform")
 require("prototypes.entity.space-plan")
+require("prototypes.entity.weapon")
 
 -- Recipe
 require("prototypes.recipe.generators")
@@ -28,6 +30,7 @@ require("prototypes.recipe.plant")
 require("prototypes.recipe.topography-reform")
 require("prototypes.recipe.chemistry")
 require("prototypes.recipe.space-plan")
+require("prototypes.recipe.weapon")
 
 -- Technology
 require("prototypes.technology.drill")
@@ -38,6 +41,7 @@ require("prototypes.technology.generator")
 require("prototypes.technology.chemistry")
 require("prototypes.technology.space-plan")
 require("prototypes.technology.robots-upgrades")
+require("prototypes.technology.weapon")
 
 -- Overrides
 -- data.raw["recipe"][name].ingredients = instead

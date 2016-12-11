@@ -1,5 +1,5 @@
 data.raw["item"]["wood"].stack_size = 100
-
+data.raw["item"]["landfill"].stack_size = 1000
 
 data:extend({
 	{
