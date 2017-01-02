@@ -36,7 +36,6 @@ data:extend{
 		enabled = false,
 		ingredients = {
 			{type="item", name="germling", amount=1},
-			{type="item", name="dirt", amount=1},
 			{type="fluid", name="water", amount=1},
 		},
 		energy_required = 10,
