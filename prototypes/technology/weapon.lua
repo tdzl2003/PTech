@@ -1,9 +1,9 @@
 data:extend({
 	{
 		type = "technology",
-	    name= "underground-drilling-water",
+	    name= "laser-turret-mx",
 	    prerequisites= {"particle"},
-		icon="__PTech__/graphics/technology/icons/miner.png",
+		icon="__base__/graphics/icons/laser-turret.png",
 	    unit=
 	    {
 	      count= 1500,
